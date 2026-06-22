@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- ============================================================
+     SEO BÁSICO  (ajuste a URL canônica e a imagem og: quando publicar)
+     ============================================================ -->
+<title>Instituto HumanLab — Psicanálise clínica com Alessandra Lessa | SP e online</title>
+<meta name="description" content="Instituto HumanLab: psicanálise clínica para adultos, casais, famílias e gestantes, supervisão e formação para profissionais. Direção da psicanalista Alessandra Lessa. Atendimento em São Paulo e online para todo o Brasil.">
+<meta name="keywords" content="psicanálise, psicóloga São Paulo, terapia de casal, psicanálise de família, gestantes, maternidade, supervisão clínica, transgeracionalidade, Alessandra Lessa, Instituto HumanLab">
+<meta name="author" content="Instituto HumanLab — Alessandra Themudo Lessa">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://institutohumanlab.com.br/">
+
+<!-- Open Graph / redes sociais -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Instituto HumanLab">
+<meta property="og:title" content="Instituto HumanLab — Psicanálise clínica com Alessandra Lessa">
+<meta property="og:description" content="Um espaço de escuta cuidadosa para entender o que se repete na sua história — e transformá-la. Atendimento em SP e online.">
+<meta property="og:url" content="https://institutohumanlab.com.br/">
+<meta property="og:image" content="https://institutohumanlab.com.br/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Dados estruturados: ajudam o Google a entender o negócio -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Instituto HumanLab",
+  "description": "Psicanálise clínica, supervisão e formação. Direção da psicanalista Alessandra Lessa.",
+  "founder": {
+    "@type": "Person",
+    "name": "Alessandra Themudo Lessa",
+    "jobTitle": "Psicóloga e Psicanalista",
+    "identifier": "CRP 06/127622"
+  },
+  "areaServed": "Brasil",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Moema, São Paulo",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "availableLanguage": "pt-BR",
+  "sameAs": ["https://www.instagram.com/instituto.humanlab/"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* =====================================================================
+   INSTITUTO HUMANLAB · folha de estilo única
+   ===================================================================== */
+:root{
+  --tinta:#1E2B26;        /* verde-petróleo profundo (texto/marca) */
+  --papel:#EEEFE9;        /* off-white esverdeado (fundo base) */
+  --papel-2:#E5E7DE;      /* papel um tom mais fechado */
+  --eucalipto:#3C4A40;    /* verde profundo (seções escuras) */
+  --salvia:#8A9A86;       /* verde suave (linhas, apoios) */
+  --salvia-clara:#B8C2B2;
+  --argila:#C0694A;       /* terracota — só em ação/destaque */
+  --argila-escura:#A8573B;
+  --tinta-60:rgba(30,43,38,.62);
+  --tinta-30:rgba(30,43,38,.28);
+
+  --ff-display:"Fraunces", Georgia, serif;
+  --ff-body:"Hanken Grotesk", system-ui, sans-serif;
+  --ff-mono:"IBM Plex Mono", ui-monospace, monospace;
+
+  --maxw:1180px;
+  --gut:clamp(20px,5vw,64px);
+  --r:14px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+body{
+  font-family:var(--ff-body);
+  background:var(--papel);
+  color:var(--tinta);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* ---- tipografia base ---- */
+h1,h2,h3{font-family:var(--ff-display);font-weight:500;line-height:1.08;letter-spacing:-.01em}
+h1{font-size:clamp(2.4rem,6.2vw,4.4rem)}
+h2{font-size:clamp(1.9rem,4.4vw,3.1rem)}
+h3{font-size:clamp(1.25rem,2.4vw,1.6rem)}
+p{font-size:clamp(1rem,1.15vw,1.08rem)}
+
+.eyebrow{
+  font-family:var(--ff-mono);
+  font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--argila);display:inline-flex;align-items:center;gap:.6rem;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--argila);display:inline-block}
+.lead{font-size:clamp(1.08rem,1.6vw,1.3rem);color:var(--tinta-60)}
+
+/* ---- layout helpers ---- */
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gut)}
+.section{padding-block:clamp(64px,9vw,128px);position:relative}
+.section--dark{background:var(--eucalipto);color:var(--papel)}
+.section--dark .lead{color:rgba(238,239,233,.72)}
+.section--dark .eyebrow,.section--dark .eyebrow::before{color:var(--salvia-clara);background:var(--salvia-clara)}
+.section--dark .eyebrow::before{height:1px}
+
+/* ---- botões ---- */
+.btn{
+  display:inline-flex;align-items:center;gap:.55rem;
+  font-family:var(--ff-body);font-weight:600;font-size:.98rem;
+  padding:.9rem 1.5rem;border-radius:100px;border:1.5px solid transparent;
+  cursor:pointer;transition:transform .25s ease,background .25s ease,box-shadow .25s ease,color .25s ease;
+  white-space:nowrap;
+}
+.btn svg{width:18px;height:18px;flex:none}
+.btn--primary{background:var(--argila);color:#fff;box-shadow:0 6px 20px -8px rgba(192,105,74,.7)}
+.btn--primary:hover{background:var(--argila-escura);transform:translateY(-2px)}
+.btn--ghost{background:transparent;border-color:var(--tinta-30);color:var(--tinta)}
+.btn--ghost:hover{border-color:var(--tinta);transform:translateY(-2px)}
+.section--dark .btn--ghost{border-color:rgba(238,239,233,.4);color:var(--papel)}
+.section--dark .btn--ghost:hover{border-color:var(--papel)}
+.btn--light{background:var(--papel);color:var(--tinta)}
+.btn--light:hover{transform:translateY(-2px);box-shadow:0 8px 22px -10px rgba(0,0,0,.4)}
+
+/* =====================================================================
+   HEADER
+   ===================================================================== */
+.header{
+  position:fixed;inset:0 0 auto 0;z-index:60;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1rem var(--gut);
+  transition:background .3s ease,box-shadow .3s ease,padding .3s ease;
+}
+.header.scrolled{background:rgba(238,239,233,.88);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(30,43,38,.08);padding-block:.7rem}
+.brand{display:flex;flex-direction:column;line-height:1;font-family:var(--ff-display);font-weight:600;font-size:1.35rem}
+.brand small{font-family:var(--ff-mono);font-weight:400;font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:var(--tinta-60);margin-top:3px}
+.nav{display:flex;align-items:center;gap:2rem}
+.nav a{font-size:.95rem;font-weight:500;position:relative}
+.nav a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:1.5px;background:var(--argila);transition:width .3s ease}
+.nav a:hover::after{width:100%}
+.header .btn{padding:.6rem 1.1rem;font-size:.9rem}
+
+.burger{display:none;background:none;border:0;cursor:pointer;width:30px;height:24px;position:relative}
+.burger span{position:absolute;left:0;height:2px;width:100%;background:var(--tinta);transition:.3s;border-radius:2px}
+.burger span:nth-child(1){top:2px}.burger span:nth-child(2){top:11px}.burger span:nth-child(3){top:20px}
+.burger.open span:nth-child(1){top:11px;transform:rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){top:11px;transform:rotate(-45deg)}
+
+@media(max-width:880px){
+  .nav{
+    position:fixed;inset:0 0 0 auto;width:min(78vw,340px);
+    background:var(--eucalipto);color:var(--papel);
+    flex-direction:column;justify-content:center;align-items:flex-start;
+    gap:1.4rem;padding:2rem var(--gut);
+    transform:translateX(100%);transition:transform .35s ease;z-index:55;
+  }
+  .nav.open{transform:translateX(0)}
+  .nav a{font-size:1.3rem;font-family:var(--ff-display)}
+  .nav a::after{background:var(--salvia-clara)}
+  .nav .btn{margin-top:1rem}
+  .header .nav .btn{font-size:1rem;padding:.8rem 1.4rem}
+  .burger{display:block;z-index:60}
+  .header.menu-open .burger span{background:var(--papel)}
+}
+
+/* =====================================================================
+   FIO DE LINHAGEM (elemento de assinatura)
+   ===================================================================== */
+.thread{position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(var(--salvia),transparent);transform:translateX(-50%);opacity:.5;z-index:0;pointer-events:none}
+@media(max-width:880px){.thread{left:24px}}
+
+/* =====================================================================
+   HERO
+   ===================================================================== */
+.hero{padding-top:clamp(120px,16vh,170px);padding-bottom:clamp(60px,8vw,100px);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(var(--salvia-clara),transparent);transform:translateX(-50%);opacity:.45}
+@media(max-width:880px){.hero::before{left:24px}}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,68px);align-items:center;position:relative;z-index:2}
+.hero h1{margin:1.1rem 0 1.3rem}
+.hero h1 em{font-style:italic;color:var(--argila)}
+.hero .lead{max-width:38ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2rem}
+.chip{font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.05em;padding:.45rem .8rem;border:1px solid var(--tinta-30);border-radius:100px;color:var(--tinta-60)}
+
+/* moldura da foto */
+.portrait{position:relative}
+.portrait .ph{border-radius:260px 260px var(--r) var(--r);aspect-ratio:4/5}
+.portrait .badge{
+  position:absolute;left:-14px;bottom:24px;background:var(--papel);
+  border:1px solid var(--salvia);border-radius:12px;padding:.7rem .95rem;
+  font-family:var(--ff-mono);font-size:.7rem;line-height:1.5;box-shadow:0 18px 40px -22px rgba(30,43,38,.5)}
+.portrait .badge b{font-family:var(--ff-display);font-size:1.4rem;display:block;font-weight:600}
+
+@media(max-width:880px){
+  .hero-grid{grid-template-columns:1fr;text-align:left}
+  .portrait{order:-1;max-width:340px}
+  .portrait .ph{border-radius:200px 200px var(--r) var(--r)}
+}
+
+/* ---- placeholders de imagem (troque por fotos reais) ---- */
+.ph{
+  background:
+    repeating-linear-gradient(45deg,rgba(138,154,134,.10) 0 14px,transparent 14px 28px),
+    linear-gradient(150deg,var(--salvia),var(--eucalipto));
+  border-radius:var(--r);display:flex;align-items:center;justify-content:center;
+  color:rgba(255,255,255,.92);text-align:center;padding:1.2rem;min-height:120px;position:relative}
+.ph span{font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.08em;max-width:24ch;text-shadow:0 1px 6px rgba(0,0,0,.3)}
+.ph::after{content:"FOTO REAL AQUI";position:absolute;top:10px;left:10px;font-family:var(--ff-mono);font-size:.55rem;letter-spacing:.15em;background:rgba(0,0,0,.35);color:#fff;padding:.2rem .5rem;border-radius:100px}
+
+/* =====================================================================
+   SOBRE
+   ===================================================================== */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,5vw,72px);align-items:center}
+.about-grid .ph{aspect-ratio:3/4}
+.quote{font-family:var(--ff-display);font-style:italic;font-size:clamp(1.3rem,2.4vw,1.85rem);line-height:1.35;border-left:2px solid var(--argila);padding-left:1.3rem;margin:1.8rem 0;color:var(--tinta)}
+.quote cite{display:block;font-family:var(--ff-mono);font-style:normal;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta-60);margin-top:.8rem}
+.creds{list-style:none;display:grid;gap:.55rem;margin-top:1.4rem}
+.creds li{font-family:var(--ff-mono);font-size:.82rem;color:var(--tinta-60);padding-left:1.4rem;position:relative}
+.creds li::before{content:"—";position:absolute;left:0;color:var(--argila)}
+@media(max-width:880px){.about-grid{grid-template-columns:1fr}.about-grid .ph{max-width:380px}}
+
+/* =====================================================================
+   SERVIÇOS
+   ===================================================================== */
+.head-block{max-width:60ch;margin-bottom:clamp(36px,5vw,60px)}
+.head-block h2{margin-top:.8rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+.card{
+  background:var(--papel-2);border:1px solid rgba(30,43,38,.08);
+  border-radius:var(--r);padding:1.7rem 1.5rem;transition:transform .3s ease,box-shadow .3s ease,background .3s ease;
+  display:flex;flex-direction:column;gap:.7rem}
+.card:hover{transform:translateY(-5px);box-shadow:0 24px 48px -30px rgba(30,43,38,.5);background:#fff}
+.card .num{font-family:var(--ff-mono);font-size:.78rem;color:var(--argila);letter-spacing:.1em}
+.card h3{font-size:1.3rem}
+.card p{font-size:.98rem;color:var(--tinta-60);flex:1}
+.card a{font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.06em;color:var(--tinta);display:inline-flex;align-items:center;gap:.4rem;margin-top:.4rem}
+.card a:hover{color:var(--argila)}
+.card a::after{content:"→";transition:transform .25s ease}
+.card a:hover::after{transform:translateX(4px)}
+@media(max-width:880px){.cards{grid-template-columns:1fr}}
+@media(min-width:881px) and (max-width:1040px){.cards{grid-template-columns:repeat(2,1fr)}}
+
+/* =====================================================================
+   DIFERENCIAIS (dark)
+   ===================================================================== */
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;margin-top:clamp(30px,4vw,52px)}
+.pillar{border-top:1px solid rgba(184,194,178,.3);padding-top:1.2rem}
+.pillar .k{font-family:var(--ff-mono);font-size:.74rem;color:var(--salvia-clara);letter-spacing:.1em}
+.pillar h3{font-size:1.25rem;margin:.6rem 0 .5rem;color:var(--papel)}
+.pillar p{font-size:.92rem;color:rgba(238,239,233,.7)}
+@media(max-width:880px){.pillars{grid-template-columns:1fr;gap:0}.pillar{padding-block:1.3rem}}
+@media(min-width:881px) and (max-width:1040px){.pillars{grid-template-columns:repeat(2,1fr)}}
+
+/* =====================================================================
+   PARA QUEM É
+   ===================================================================== */
+.audience{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.aud{border:1px solid var(--salvia);border-radius:var(--r);padding:clamp(1.6rem,3vw,2.4rem);background:var(--papel-2)}
+.aud .tag{font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--argila)}
+.aud h3{margin:.7rem 0 .8rem}
+.aud ul{list-style:none;display:grid;gap:.6rem;margin:1.1rem 0 1.4rem}
+.aud li{position:relative;padding-left:1.6rem;color:var(--tinta-60);font-size:.98rem}
+.aud li::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;border-radius:50%;background:var(--salvia)}
+@media(max-width:880px){.audience{grid-template-columns:1fr}}
+
+/* =====================================================================
+   PROCESSO 01–04
+   ===================================================================== */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;counter-reset:step;position:relative}
+.step{padding-top:2.6rem;position:relative}
+.step::before{
+  counter-increment:step;content:"0" counter(step);
+  font-family:var(--ff-mono);font-size:.9rem;color:var(--argila);
+  position:absolute;top:0;left:0}
+.step::after{content:"";position:absolute;top:.55rem;left:2.4rem;right:-.6rem;height:1px;background:var(--salvia)}
+.step:last-child::after{display:none}
+.step h3{font-size:1.18rem;margin-bottom:.4rem}
+.step p{font-size:.94rem;color:var(--tinta-60)}
+@media(max-width:880px){
+  .steps{grid-template-columns:1fr;gap:0}
+  .step{padding:1.4rem 0 1.4rem 2.6rem;border-left:1px solid var(--salvia);margin-left:.4rem}
+  .step::before{top:1.4rem;left:-.55rem;background:var(--papel);padding-bottom:.3rem}
+  .step::after{display:none}
+}
+
+/* =====================================================================
+   CONTEÚDO / AUTORIDADE
+   ===================================================================== */
+.content-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+.tile{border-radius:var(--r);overflow:hidden;border:1px solid rgba(30,43,38,.1);background:var(--papel-2);transition:transform .3s ease,box-shadow .3s ease}
+.tile:hover{transform:translateY(-5px);box-shadow:0 24px 48px -30px rgba(30,43,38,.45)}
+.tile .ph{aspect-ratio:16/10;border-radius:0}
+.tile .body{padding:1.3rem 1.4rem}
+.tile .k{font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.1em;color:var(--argila)}
+.tile h3{font-size:1.18rem;margin:.5rem 0 .5rem}
+.tile p{font-size:.92rem;color:var(--tinta-60)}
+@media(max-width:880px){.content-grid{grid-template-columns:1fr}}
+
+/* =====================================================================
+   DEPOIMENTOS
+   ===================================================================== */
+.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin-top:clamp(30px,4vw,52px)}
+.testi{background:var(--papel);border:1px solid rgba(238,239,233,.18);border-radius:var(--r);padding:1.8rem;color:var(--tinta)}
+.section--dark .testi{background:rgba(238,239,233,.05);border-color:rgba(238,239,233,.16);color:var(--papel)}
+.testi p{font-family:var(--ff-display);font-style:italic;font-size:1.08rem;line-height:1.5}
+.testi footer{margin-top:1.1rem;font-family:var(--ff-mono);font-size:.74rem;letter-spacing:.06em}
+.section--dark .testi footer{color:var(--salvia-clara)}
+.testi footer span{color:var(--tinta-60)}
+.section--dark .testi footer span{color:rgba(238,239,233,.55)}
+@media(max-width:880px){.quotes{grid-template-columns:1fr}}
+
+/* =====================================================================
+   FAQ
+   ===================================================================== */
+.faq{max-width:820px;margin-inline:auto}
+.acc{border-bottom:1px solid var(--tinta-30)}
+.acc button{
+  width:100%;background:none;border:0;cursor:pointer;text-align:left;
+  padding:1.3rem 0;display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  font-family:var(--ff-display);font-size:clamp(1.1rem,2vw,1.35rem);color:var(--tinta)}
+.acc .ico{flex:none;width:24px;height:24px;position:relative}
+.acc .ico::before,.acc .ico::after{content:"";position:absolute;background:var(--argila);transition:transform .3s ease}
+.acc .ico::before{top:11px;left:2px;width:20px;height:2px}
+.acc .ico::after{top:2px;left:11px;width:2px;height:20px}
+.acc[aria-expanded="true"] .ico::after{transform:rotate(90deg);opacity:0}
+.acc-panel{overflow:hidden;max-height:0;transition:max-height .35s ease}
+.acc-panel p{padding-bottom:1.3rem;color:var(--tinta-60);max-width:68ch}
+
+/* =====================================================================
+   CTA FINAL
+   ===================================================================== */
+.final{text-align:center}
+.final h2{max-width:18ch;margin:.6rem auto 1.2rem}
+.final .lead{max-width:46ch;margin-inline:auto}
+.final .btn{margin-top:1.9rem}
+
+/* =====================================================================
+   RODAPÉ
+   ===================================================================== */
+.footer{background:var(--tinta);color:var(--papel);padding-block:clamp(50px,7vw,80px)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
+.footer .brand{color:var(--papel)}
+.footer .brand small{color:rgba(238,239,233,.5)}
+.footer p{font-size:.92rem;color:rgba(238,239,233,.65);margin-top:1rem;max-width:34ch}
+.foot-col h4{font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--salvia-clara);margin-bottom:1rem}
+.foot-col a,.foot-col span{display:block;font-size:.94rem;color:rgba(238,239,233,.78);margin-bottom:.6rem}
+.foot-col a:hover{color:var(--argila)}
+.foot-bottom{border-top:1px solid rgba(238,239,233,.14);margin-top:2.6rem;padding-top:1.6rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-family:var(--ff-mono);font-size:.72rem;color:rgba(238,239,233,.5)}
+.cvv{background:rgba(238,239,233,.06);border:1px solid rgba(238,239,233,.14);border-radius:10px;padding:.9rem 1.1rem;font-size:.82rem;color:rgba(238,239,233,.72);margin-top:1.4rem;max-width:40ch}
+.cvv b{color:var(--salvia-clara)}
+@media(max-width:880px){.foot-grid{grid-template-columns:1fr 1fr}.footer .brand-col{grid-column:1/-1}}
+@media(max-width:540px){.foot-grid{grid-template-columns:1fr}}
+
+/* ---- WhatsApp flutuante ---- */
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:50;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.6);transition:transform .25s ease}
+.float-wa:hover{transform:scale(1.08)}
+.float-wa svg{width:30px;height:30px;fill:#fff}
+
+/* ---- reveal on scroll ---- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* skip link acessível */
+.skip{position:absolute;left:-999px;top:0;background:var(--tinta);color:#fff;padding:.7rem 1rem;z-index:100;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+:focus-visible{outline:2px solid var(--argila);outline-offset:3px;border-radius:4px}
+</style>
+</head>
+
+<body>
+<a href="#main" class="skip">Pular para o conteúdo</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header" id="header">
+  <a href="#hero" class="brand" aria-label="Instituto HumanLab — início">
+    HumanLab<small>Instituto de Psicanálise</small>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Navegação principal">
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#diferenciais">Diferenciais</a>
+    <a href="#processo">Como funciona</a>
+    <a href="#conteudo">Conteúdo</a>
+    <a href="#faq">Dúvidas</a>
+    <a class="btn btn--primary" data-wa>Falar no WhatsApp</a>
+  </nav>
+
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Instituto HumanLab · Psicanálise clínica</span>
+      <h1>Entenda o que se repete na sua história — <em>e comece a transformá-la.</em></h1>
+      <p class="lead">O Instituto HumanLab reúne, sob a direção da psicanalista Alessandra Lessa, atendimento clínico, supervisão e formação. Um espaço de escuta cuidadosa para adultos, casais, famílias e gestantes — presencial em São Paulo e online para todo o Brasil.</p>
+      <div class="hero-cta">
+        <a class="btn btn--primary" data-wa>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.5 23.5l1.6-6A11.5 11.5 0 1112 23.5a11.4 11.4 0 01-5.9-1.6l-5.6 1.6zm6-3.9l.4.2a9.5 9.5 0 005 1.4 9.6 9.6 0 10-9.6-9.6 9.5 9.5 0 001.5 5.1l.2.4-1 3.5 3.5-.9z"/></svg>
+          Agendar conversa
+        </a>
+        <a class="btn btn--ghost" href="#servicos">Conhecer o método</a>
+      </div>
+      <div class="chips">
+        <span class="chip">CRP 06/127622</span>
+        <span class="chip">Mestrado · Univ. do Porto</span>
+        <span class="chip">Online e presencial</span>
+      </div>
+    </div>
+
+    <div class="portrait reveal">
+      <div class="ph"><span>Retrato da Alessandra Lessa — luz natural, fundo neutro, postura acolhedora</span></div>
+      <div class="badge">+10 anos<b>de escuta</b>casais · famílias · maternidade</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOBRE ===================== -->
+<section class="section" id="sobre">
+  <span class="thread" aria-hidden="true"></span>
+  <div class="wrap about-grid">
+    <div class="ph reveal"><span>Alessandra no consultório / detalhe do espaço de atendimento em Moema</span></div>
+    <div class="reveal">
+      <span class="eyebrow">Quem conduz</span>
+      <h2>Alessandra Lessa, psicóloga e psicanalista</h2>
+      <p class="lead" style="margin-top:1rem">Há mais de uma década, Alessandra Themudo Lessa dedica sua escuta às relações que nos formam: a maternidade, o casal, a família e as histórias que atravessam gerações.</p>
+      <p style="margin-top:1rem;color:var(--tinta-60)">Especialista em psicanálise de casais e famílias pelo Instituto Sedes Sapientiae e mestranda em Ciências Humanas pela Universidade do Porto — com foco na proteção e nos direitos das crianças —, ela traduz uma formação sólida em um cuidado prático e real. No HumanLab, teoria e clínica caminham juntas para que cada pessoa compreenda suas repetições e construa novas formas de viver.</p>
+
+      <blockquote class="quote">
+        É necessário um ambiente suficientemente bom para permitir o florescimento do verdadeiro self.
+        <cite>D. W. Winnicott</cite>
+      </blockquote>
+
+      <ul class="creds">
+        <li>Graduação em Psicologia · FMU</li>
+        <li>Especialização em Psicanálise · Centro de Estudos Psicanalíticos (CEP)</li>
+        <li>Aprimoramento em Psicanálise de Casais e Famílias · Sedes Sapientiae</li>
+        <li>Psicoterapia Breve Psicanalítica · Sedes Sapientiae</li>
+        <li>Mestranda em Ciências Humanas · Universidade do Porto (Portugal)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVIÇOS ===================== -->
+<section class="section" id="servicos" style="background:var(--papel-2)">
+  <div class="wrap">
+    <div class="head-block reveal">
+      <span class="eyebrow">O que oferecemos</span>
+      <h2>Serviços para quem busca cuidado — e para quem cuida</h2>
+      <p class="lead" style="margin-top:.8rem">Um único instituto, dois caminhos: o atendimento clínico de quem procura se entender melhor e a formação contínua de profissionais de saúde.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <span class="num">01 · Atendimento</span>
+        <h3>Análise individual</h3>
+        <p>Sessões para adultos, online ou presenciais, em um espaço seguro para falar, ser ouvido e elaborar o que pesa.</p>
+        <a data-wa>Falar no WhatsApp</a>
+      </article>
+      <article class="card reveal">
+        <span class="num">02 · Relações</span>
+        <h3>Casais e famílias</h3>
+        <p>Psicanálise dos vínculos, para quem quer compreender conflitos e reconstruir relações com mais verdade.</p>
+        <a data-wa>Falar no WhatsApp</a>
+      </article>
+      <article class="card reveal">
+        <span class="num">03 · Maternidade</span>
+        <h3>Gestação e mães-bebês</h3>
+        <p>Acompanhamento para gestantes e para a relação mãe-bebê, nos primeiros e delicados capítulos de uma nova história.</p>
+        <a data-wa>Falar no WhatsApp</a>
+      </article>
+      <article class="card reveal">
+        <span class="num">04 · Profissionais</span>
+        <h3>Supervisão clínica</h3>
+        <p>Para psicólogos e psicanalistas em formação contínua: um espaço de elaboração do saber, individual ou em grupo.</p>
+        <a data-wa>Saber mais</a>
+      </article>
+      <article class="card reveal">
+        <span class="num">05 · Profissionais</span>
+        <h3>Grupos de estudo</h3>
+        <p>Encontros entre profissionais para estudar, em profundidade, autores e temas fundamentais da psicanálise.</p>
+        <a data-wa>Entrar na lista</a>
+      </article>
+      <article class="card reveal">
+        <span class="num">06 · Conhecimento</span>
+        <h3>Cursos online</h3>
+        <p>Conteúdo transformador sobre comportamento, relações e transgeracionalidade, ao alcance de um clique.</p>
+        <a data-wa>Ver agenda</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DIFERENCIAIS ===================== -->
+<section class="section section--dark" id="diferenciais">
+  <div class="wrap">
+    <div class="head-block reveal">
+      <span class="eyebrow">Por que o HumanLab</span>
+      <h2>Uma escuta rigorosa para o material mais humano</h2>
+    </div>
+    <div class="pillars">
+      <div class="pillar reveal">
+        <span class="k">01</span>
+        <h3>Formação que sustenta</h3>
+        <p>Base sólida em Sedes Sapientiae, CEP e mestrado internacional pela Universidade do Porto.</p>
+      </div>
+      <div class="pillar reveal">
+        <span class="k">02</span>
+        <h3>Especialista em vínculos</h3>
+        <p>Casais, famílias, maternidade e as histórias que se transmitem entre gerações.</p>
+      </div>
+      <div class="pillar reveal">
+        <span class="k">03</span>
+        <h3>Teoria e prática juntas</h3>
+        <p>Uma clínica embasada, que une rigor teórico a um acolhimento verdadeiro.</p>
+      </div>
+      <div class="pillar reveal">
+        <span class="k">04</span>
+        <h3>Sem fronteiras</h3>
+        <p>Atendimento presencial em Moema (SP) e online para todo o Brasil.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PARA QUEM É ===================== -->
+<section class="section" id="paraquem">
+  <span class="thread" aria-hidden="true"></span>
+  <div class="wrap">
+    <div class="head-block reveal">
+      <span class="eyebrow">Você se reconhece aqui?</span>
+      <h2>Dois caminhos, o mesmo cuidado</h2>
+    </div>
+    <div class="audience">
+      <div class="aud reveal">
+        <span class="tag">Para você</span>
+        <h3>Público em geral</h3>
+        <p style="color:var(--tinta-60)">Para quem sente que algo se repete e quer entender de onde vem.</p>
+        <ul>
+          <li>Vive conflitos no casamento ou na família</li>
+          <li>Está na gestação ou na maternidade e precisa de apoio</li>
+          <li>Busca autoconhecimento e equilíbrio emocional</li>
+          <li>Quer um espaço seguro, sem julgamento, para falar</li>
+        </ul>
+        <a class="btn btn--primary" data-wa>Quero começar minha análise</a>
+      </div>
+      <div class="aud reveal">
+        <span class="tag">Para profissionais</span>
+        <h3>Profissionais de saúde</h3>
+        <p style="color:var(--tinta-60)">Para psicólogos e psicanalistas comprometidos com a formação contínua.</p>
+        <ul>
+          <li>Quer supervisão individual ou em grupo</li>
+          <li>Busca aprofundar teoria e escrita clínica</li>
+          <li>Deseja integrar grupos de estudo dirigidos</li>
+          <li>Procura uma supervisora presente e assertiva</li>
+        </ul>
+        <a class="btn btn--ghost" data-wa>Falar sobre supervisão</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESSO ===================== -->
+<section class="section" id="processo" style="background:var(--papel-2)">
+  <div class="wrap">
+    <div class="head-block reveal">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Começar é mais simples do que parece</h2>
+      <p class="lead" style="margin-top:.8rem">Do primeiro contato ao processo contínuo, cada passo respeita o seu tempo.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Primeiro contato</h3><p>Você envia uma mensagem no WhatsApp e conversamos sobre o que procura, sem compromisso.</p></div>
+      <div class="step reveal"><h3>Sessão inicial</h3><p>Um encontro de acolhimento para entender sua história, suas questões e expectativas.</p></div>
+      <div class="step reveal"><h3>Construção do vínculo</h3><p>Definimos juntos o ritmo e o formato — online ou presencial — do acompanhamento.</p></div>
+      <div class="step reveal"><h3>Processo contínuo</h3><p>A análise segue no seu tempo: um espaço constante de escuta, reflexão e transformação.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTEÚDO / AUTORIDADE ===================== -->
+<section class="section" id="conteudo">
+  <span class="thread" aria-hidden="true"></span>
+  <div class="wrap">
+    <div class="head-block reveal">
+      <span class="eyebrow">Leve a psicanálise com você</span>
+      <h2>Conteúdo que aproxima a clínica do dia a dia</h2>
+    </div>
+    <div class="content-grid">
+      <article class="tile reveal">
+        <div class="ph"><span>Capa do podcast / foto de gravação</span></div>
+        <div class="body">
+          <span class="k">Podcast</span>
+          <h3>RelationShit & Ancestral Legal</h3>
+          <p>Conversas francas sobre relações, repetições e o que herdamos sem perceber. Novos episódios em breve.</p>
+        </div>
+      </article>
+      <article class="tile reveal">
+        <div class="ph"><span>Imagem editorial para os artigos do blog</span></div>
+        <div class="body">
+          <span class="k">Blog · Reflexões de uma analista</span>
+          <h3>Textos de dentro do consultório</h3>
+          <p>Sobre relações abusivas, controle disfarçado de cuidado e os adultos infantis do nosso tempo.</p>
+        </div>
+      </article>
+      <article class="tile reveal">
+        <div class="ph"><span>Capa(s) de livro / material de cursos</span></div>
+        <div class="body">
+          <span class="k">Publicações & cursos</span>
+          <h3>Saber que transforma</h3>
+          <p>Livros, supervisões e cursos online sobre transgeracionalidade, maternidade e clínica.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DEPOIMENTOS ===================== -->
+<section class="section section--dark" id="depoimentos">
+  <div class="wrap">
+    <div class="head-block reveal">
+      <span class="eyebrow">Quem já passou por aqui</span>
+      <h2>Histórias de quem foi ouvido</h2>
+    </div>
+    <div class="quotes">
+      <blockquote class="testi reveal">
+        <p>"Encontrei a Alessandra num momento em que não sabia por onde recomeçar. No trabalho de sessão, encontrei refúgio e espaço para ser eu mesma, sem medo."</p>
+        <footer>Luciana Meningue <span>· paciente</span></footer>
+      </blockquote>
+      <blockquote class="testi reveal">
+        <p>"Como supervisora, demonstra um profundo compromisso com o meu desenvolvimento. Traz insights valiosos e une teoria e prática de forma muito assertiva."</p>
+        <footer>Carolina Bezerra <span>· psicóloga</span></footer>
+      </blockquote>
+      <blockquote class="testi reveal">
+        <p>"Conduz o espaço de forma completa: na teoria, na prática e na escrita clínica. No exercício de um pensar compartilhado, ampliou meu olhar e minha escuta."</p>
+        <footer>Claudia Marioto <span>· psicóloga</span></footer>
+      </blockquote>
+      <blockquote class="testi reveal">
+        <p>"Abre seus olhos para o que você não está vendo. Com sabedoria e competência, te inspira e ensina a se respeitar e a se tornar fã de você mesmo."</p>
+        <footer>Fabio Auricchio <span>· paciente</span></footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section" id="faq">
+  <div class="wrap faq">
+    <div class="head-block reveal" style="text-align:center;margin-inline:auto">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2>Antes de dar o primeiro passo</h2>
+    </div>
+
+    <div class="acc-list reveal">
+      <div class="acc">
+        <button aria-expanded="false">Qual a diferença entre psicólogo e psicanalista?<span class="ico"></span></button>
+        <div class="acc-panel"><p>O psicólogo tem formação acadêmica em Psicologia e registro no CRP. O psicanalista é formado na teoria e no método da psicanálise — uma escuta voltada ao inconsciente e ao que se repete. Alessandra reúne as duas formações, somando rigor clínico e profundidade analítica.</p></div>
+      </div>
+      <div class="acc">
+        <button aria-expanded="false">Os atendimentos são online ou presenciais?<span class="ico"></span></button>
+        <div class="acc-panel"><p>Os dois. O atendimento presencial acontece em Moema, São Paulo, e o online atende todo o Brasil com a mesma qualidade de escuta. Você escolhe o formato mais confortável — e pode alternar quando precisar.</p></div>
+      </div>
+      <div class="acc">
+        <button aria-expanded="false">Quanto tempo dura um processo de análise?<span class="ico"></span></button>
+        <div class="acc-panel"><p>Não há um prazo fixo: a análise respeita o tempo de cada pessoa. Para questões mais pontuais, existe a psicoterapia breve psicanalítica, focada e objetiva. Definimos juntos o melhor caminho na sessão inicial.</p></div>
+      </div>
+      <div class="acc">
+        <button aria-expanded="false">A psicanálise é indicada para mim?<span class="ico"></span></button>
+        <div class="acc-panel"><p>Se você sente que repete padrões, vive conflitos nas relações ou simplesmente quer se compreender melhor, sim. A análise é para quem deseja olhar para a própria história com mais clareza — não é preciso estar "em crise" para começar.</p></div>
+      </div>
+      <div class="acc">
+        <button aria-expanded="false">Como funciona a supervisão clínica?<span class="ico"></span></button>
+        <div class="acc-panel"><p>É um espaço de elaboração do saber do analista — antes, durante e depois de cada atendimento. Pode ser individual ou em grupo, voltada a psicólogos e psicanalistas comprometidos com o sigilo e a formação contínua. Fale no WhatsApp para conhecer a agenda.</p></div>
+      </div>
+      <div class="acc">
+        <button aria-expanded="false">Como faço para começar?<span class="ico"></span></button>
+        <div class="acc-panel"><p>É simples: envie uma mensagem no WhatsApp. Conversamos sobre o que você procura e agendamos a sua primeira sessão de acolhimento.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA FINAL ===================== -->
+<section class="section section--dark final" id="contato">
+  <div class="wrap reveal">
+    <span class="eyebrow" style="justify-content:center">Vamos conversar</span>
+    <h2>Dar o primeiro passo costuma ser o mais difícil.</h2>
+    <p class="lead">Estou aqui para te ouvir. Envie uma mensagem e comece, no seu tempo, uma jornada de autoconhecimento e cuidado.</p>
+    <a class="btn btn--primary" data-wa>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.5 23.5l1.6-6A11.5 11.5 0 1112 23.5a11.4 11.4 0 01-5.9-1.6l-5.6 1.6zm6-3.9l.4.2a9.5 9.5 0 005 1.4 9.6 9.6 0 10-9.6-9.6 9.5 9.5 0 001.5 5.1l.2.4-1 3.5 3.5-.9z"/></svg>
+      Falar no WhatsApp
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div class="brand-col">
+      <span class="brand">HumanLab<small>Instituto de Psicanálise</small></span>
+      <p>Psicanálise clínica, supervisão e formação, sob a direção da psicanalista Alessandra Lessa.</p>
+      <div class="cvv">Em situações de crise emocional, o <b>CVV</b> oferece apoio gratuito e sigiloso 24h pelo telefone <b>188</b>. O atendimento clínico não substitui o atendimento de emergência.</div>
+    </div>
+    <div class="foot-col">
+      <h4>Navegação</h4>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#conteudo">Conteúdo</a>
+      <a href="#faq">Dúvidas</a>
+    </div>
+    <div class="foot-col">
+      <h4>Contato</h4>
+      <a data-wa>WhatsApp</a>
+      <a href="https://www.instagram.com/instituto.humanlab/" target="_blank" rel="noopener">Instagram @instituto.humanlab</a>
+      <span>Moema · São Paulo/SP</span>
+      <span>Online · todo o Brasil</span>
+      <span>CRP 06/127622</span>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© <span id="year"></span> Instituto HumanLab. Todos os direitos reservados.</span>
+    <span>Alessandra Themudo Lessa · Psicóloga e Psicanalista</span>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a class="float-wa" data-wa aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M.5 23.5l1.6-6A11.5 11.5 0 1112 23.5a11.4 11.4 0 01-5.9-1.6l-5.6 1.6zm6-3.9l.4.2a9.5 9.5 0 005 1.4 9.6 9.6 0 10-9.6-9.6 9.5 9.5 0 001.5 5.1l.2.4-1 3.5 3.5-.9z"/></svg>
+</a>
+
+<script>
+/* =====================================================================
+   CONFIGURAÇÃO — TROQUE ESTES DOIS VALORES
+   ===================================================================== */
+const WHATSAPP = "5511999999999"; // <-- coloque o número real com DDI+DDD, só dígitos
+const MENSAGEM = "Olá! Vim pelo site do Instituto HumanLab e gostaria de mais informações.";
+
+/* monta o link de todos os botões marcados com data-wa */
+const waLink = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(MENSAGEM);
+document.querySelectorAll("[data-wa]").forEach(el=>{
+  el.setAttribute("href", waLink);
+  el.setAttribute("target","_blank");
+  el.setAttribute("rel","noopener");
+});
+
+/* ano dinâmico */
+document.getElementById("year").textContent = new Date().getFullYear();
+
+/* header com fundo ao rolar */
+const header = document.getElementById("header");
+addEventListener("scroll",()=>header.classList.toggle("scrolled", scrollY>40),{passive:true});
+
+/* menu mobile */
+const burger = document.getElementById("burger");
+const nav = document.getElementById("nav");
+function toggleMenu(open){
+  nav.classList.toggle("open",open);
+  burger.classList.toggle("open",open);
+  header.classList.toggle("menu-open",open);
+  burger.setAttribute("aria-expanded",open);
+  document.body.style.overflow = open ? "hidden" : "";
+}
+burger.addEventListener("click",()=>toggleMenu(!nav.classList.contains("open")));
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>toggleMenu(false)));
+
+/* FAQ accordion */
+document.querySelectorAll(".acc button").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const acc = btn.parentElement;
+    const panel = btn.nextElementSibling;
+    const open = btn.getAttribute("aria-expanded")==="true";
+    btn.setAttribute("aria-expanded",!open);
+    acc.setAttribute("aria-expanded",!open);
+    panel.style.maxHeight = open ? null : panel.scrollHeight + "px";
+  });
+});
+
+/* reveal on scroll */
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
