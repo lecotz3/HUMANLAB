@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<title>Formação para profissionais — Instituto HumanLab | Alessandra Lessa</title>
+<meta name="description" content="Cursos, supervisão clínica e grupos de estudo para psicólogos e psicanalistas comprometidos com a formação contínua. Direção da psicanalista Alessandra Lessa.">
+<meta name="author" content="Instituto HumanLab — Alessandra Themudo Lessa">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://institutohumanlab.com.br/profissionais.html">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Instituto HumanLab">
+<meta property="og:title" content="Formação para profissionais — Instituto HumanLab">
+<meta property="og:description" content="Supervisão, grupos de estudo e cursos com rigor teórico e clínico, sob a direção de Alessandra Lessa.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* =====================================================================
+   PROFISSIONAIS · Formação contínua
+   ===================================================================== */
+:root{
+  --tinta:#1E2B26;
+  --papel:#EEEFE9;
+  --papel-2:#E5E7DE;
+  --eucalipto:#3C4A40;
+  --salvia:#8A9A86;
+  --salvia-clara:#B8C2B2;
+  --argila:#C0694A;
+  --argila-escura:#A8573B;
+  --tinta-60:rgba(30,43,38,.62);
+  --tinta-30:rgba(30,43,38,.28);
+  --tinta-12:rgba(30,43,38,.12);
+
+  --ff-display:"Fraunces", Georgia, serif;
+  --ff-body:"Hanken Grotesk", system-ui, sans-serif;
+  --ff-mono:"IBM Plex Mono", ui-monospace, monospace;
+
+  --maxw:1180px;
+  --gut:clamp(20px,5vw,64px);
+  --r:14px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:var(--ff-body);background:var(--papel);color:var(--tinta);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+h1,h2,h3{font-family:var(--ff-display);font-weight:500;line-height:1.06;letter-spacing:-.015em;font-variation-settings:"opsz" 144}
+h1{font-size:clamp(2.4rem,6.2vw,4.4rem)}
+h2{font-size:clamp(1.9rem,4.4vw,3.1rem)}
+h3{font-size:clamp(1.25rem,2.4vw,1.6rem)}
+p{font-size:clamp(1rem,1.15vw,1.08rem)}
+
+.eyebrow{font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--argila);display:inline-flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--argila);display:inline-block}
+.lead{font-size:clamp(1.08rem,1.6vw,1.3rem);color:var(--tinta-60);line-height:1.5}
+
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gut)}
+.section{padding-block:clamp(64px,9vw,128px);position:relative}
+.section--dark{background:var(--eucalipto);color:var(--papel)}
+.section--dark .lead{color:rgba(238,239,233,.72)}
+.section--dark .eyebrow{color:var(--salvia-clara)}
+.section--dark .eyebrow::before{background:var(--salvia-clara)}
+
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--ff-body);font-weight:600;font-size:.98rem;padding:.9rem 1.5rem;border-radius:100px;border:1.5px solid transparent;cursor:pointer;transition:transform .25s ease,background .25s ease,box-shadow .25s ease,color .25s ease,border-color .25s ease;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn--primary{background:var(--argila);color:#fff;box-shadow:0 6px 20px -8px rgba(192,105,74,.7)}
+.btn--primary:hover{background:var(--argila-escura);transform:translateY(-2px)}
+.btn--ghost{background:transparent;border-color:var(--tinta-30);color:var(--tinta)}
+.btn--ghost:hover{border-color:var(--tinta);transform:translateY(-2px)}
+.section--dark .btn--ghost{border-color:rgba(238,239,233,.4);color:var(--papel)}
+.section--dark .btn--ghost:hover{border-color:var(--papel)}
+
+.header{position:fixed;inset:0 0 auto 0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:1rem var(--gut);transition:background .3s ease,box-shadow .3s ease,padding .3s ease}
+.header.scrolled{background:rgba(238,239,233,.88);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--tinta-12);padding-block:.7rem}
+.brand{display:flex;flex-direction:column;line-height:1;font-family:var(--ff-display);font-weight:600;font-size:1.35rem;font-variation-settings:"opsz" 144}
+.brand small{font-family:var(--ff-mono);font-weight:400;font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:var(--tinta-60);margin-top:3px}
+.nav{display:flex;align-items:center;gap:2rem}
+.nav a{font-size:.95rem;font-weight:500;position:relative}
+.nav a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:1.5px;background:var(--argila);transition:width .3s ease}
+.nav a:hover::after,.nav a[aria-current="page"]::after{width:100%}
+.header .btn{padding:.6rem 1.1rem;font-size:.9rem}
+
+.burger{display:none;background:none;border:0;cursor:pointer;width:30px;height:24px;position:relative}
+.burger span{position:absolute;left:0;height:2px;width:100%;background:var(--tinta);transition:.3s;border-radius:2px}
+.burger span:nth-child(1){top:2px}.burger span:nth-child(2){top:11px}.burger span:nth-child(3){top:20px}
+.burger.open span:nth-child(1){top:11px;transform:rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){top:11px;transform:rotate(-45deg)}
+
+@media(max-width:880px){
+  .nav{position:fixed;inset:0 0 0 auto;width:min(78vw,340px);background:var(--eucalipto);color:var(--papel);flex-direction:column;justify-content:center;align-items:flex-start;gap:1.4rem;padding:2rem var(--gut);transform:translateX(100%);transition:transform .35s ease;z-index:55}
+  .nav.open{transform:translateX(0)}
+  .nav a{font-size:1.3rem;font-family:var(--ff-display)}
+  .nav a::after{background:var(--salvia-clara)}
+  .nav .btn{margin-top:1rem}
+  .header .nav .btn{font-size:1rem;padding:.8rem 1.4rem}
+  .burger{display:block;z-index:60}
+  .header.menu-open .burger span{background:var(--papel)}
+}
+
+.back-to-hub{font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta-60)}
+.back-to-hub a{color:var(--tinta-60);transition:color .25s ease}
+.back-to-hub a:hover{color:var(--argila)}
+.back-to-hub::before{content:"← "}
+
+/* =====================================================================
+   HERO — Tipográfico (centralizado, biblioteca silenciosa)
+   ===================================================================== */
+.pf-hero{padding-top:clamp(140px,17vh,190px);padding-bottom:clamp(50px,7vw,90px);position:relative;overflow:hidden}
+.pf-hero .wrap{max-width:980px;text-align:center}
+.chapter-tag{font-family:var(--ff-display);font-style:italic;font-size:1.6rem;color:var(--salvia);margin-bottom:.5rem;display:block;font-variation-settings:"opsz" 144}
+.pf-hero h1{margin:.5rem auto 1.4rem;max-width:18ch}
+.pf-hero h1 em{font-style:italic;color:var(--argila);font-variation-settings:"opsz" 144,"wght" 500}
+.pf-hero .lead{max-width:62ch;margin-inline:auto}
+.pf-hero .hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;margin-top:1.8rem}
+
+/* faixa de stats abaixo do hero */
+.pf-stats{
+  margin-top:clamp(50px,7vw,90px);
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border-top:1px solid var(--tinta-12);border-bottom:1px solid var(--tinta-12);
+}
+.pf-stats .stat{padding:1.3rem clamp(.8rem,2vw,1.4rem);border-left:1px solid var(--tinta-12);text-align:center}
+.pf-stats .stat:first-child{border-left:0}
+.pf-stats .num{font-family:var(--ff-display);font-size:clamp(1.8rem,3vw,2.4rem);font-variation-settings:"opsz" 144,"wght" 500;line-height:1;color:var(--tinta)}
+.pf-stats .lbl{font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta-60);margin-top:.55rem}
+@media(max-width:880px){.pf-stats{grid-template-columns:repeat(2,1fr)}.pf-stats .stat:nth-child(odd){border-left:0}.pf-stats .stat:nth-child(n+3){border-top:1px solid var(--tinta-12)}}
+
+/* =====================================================================
+   FRENTES DE FORMAÇÃO — 3 colunas grandes
+   ===================================================================== */
+.head-block{max-width:60ch;margin-bottom:clamp(36px,5vw,60px)}
+.head-block h2{margin-top:.8rem}
+
+.fronts{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.front{
+  background:var(--papel-2);border:1px solid rgba(30,43,38,.08);border-radius:var(--r);
+  padding:clamp(1.6rem,2.8vw,2.2rem);
+  display:flex;flex-direction:column;gap:.7rem;
+  transition:transform .3s ease,box-shadow .3s ease,background .3s ease;
+}
+.front:hover{transform:translateY(-5px);box-shadow:0 24px 48px -30px rgba(30,43,38,.45);background:#fff}
+.front .marker{
+  font-family:var(--ff-display);font-style:italic;
+  font-variation-settings:"opsz" 144,"wght" 400;
+  font-size:2.4rem;line-height:1;color:var(--argila);
+}
+.front h3{font-size:1.35rem;margin-top:.4rem}
+.front .k{font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.1em;color:var(--argila)}
+.front p{color:var(--tinta-60);font-size:.97rem;flex:1}
+.front ul{list-style:none;display:grid;gap:.4rem;margin-top:.4rem}
+.front ul li{font-size:.86rem;color:var(--tinta-60);padding-left:1.1rem;position:relative}
+.front ul li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:1px;background:var(--salvia)}
+.front a.lnk{font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.06em;margin-top:.6rem;display:inline-flex;gap:.4rem;align-items:center;color:var(--tinta)}
+.front a.lnk::after{content:"→";transition:transform .25s ease}
+.front a.lnk:hover{color:var(--argila)}
+.front a.lnk:hover::after{transform:translateX(4px)}
+@media(max-width:880px){.fronts{grid-template-columns:1fr}}
+@media(min-width:881px) and (max-width:1040px){.fronts{grid-template-columns:1fr 1fr}}
+
+/* =====================================================================
+   CATÁLOGO DE CURSOS — lista tipo sumário
+   ===================================================================== */
+.courses{background:var(--papel-2)}
+.course-list{display:grid;gap:0;border-top:1px solid var(--tinta-12)}
+.course{
+  display:grid;grid-template-columns:60px 1fr auto;gap:clamp(1rem,2.5vw,2rem);
+  padding:1.6rem 0;
+  border-bottom:1px solid var(--tinta-12);
+  align-items:center;
+  transition:padding .3s ease,background .3s ease;
+}
+.course:hover{padding-left:1rem;padding-right:1rem;background:rgba(255,255,255,.5)}
+.course .ord{font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.12em;color:var(--argila);align-self:start;padding-top:.3rem}
+.course .meta{display:flex;flex-direction:column;gap:.3rem}
+.course .meta h3{font-size:clamp(1.15rem,2vw,1.5rem);font-variation-settings:"opsz" 144,"wght" 500}
+.course .meta .desc{color:var(--tinta-60);font-size:.95rem;max-width:60ch}
+.course .meta .tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.4rem}
+.course .meta .tag{font-family:var(--ff-mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .55rem;border:1px solid var(--tinta-12);border-radius:100px;color:var(--tinta-60)}
+.course .meta .tag.live{border-color:var(--argila);color:var(--argila)}
+.course .cta-mini{font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.06em;color:var(--tinta);white-space:nowrap;display:inline-flex;align-items:center;gap:.4rem;transition:color .25s ease}
+.course .cta-mini::after{content:"→";transition:transform .25s ease}
+.course:hover .cta-mini{color:var(--argila)}
+.course:hover .cta-mini::after{transform:translateX(4px)}
+@media(max-width:680px){
+  .course{grid-template-columns:1fr;gap:.6rem;padding:1.4rem 0}
+  .course .cta-mini{justify-self:start;margin-top:.6rem}
+}
+
+/* =====================================================================
+   SUPERVISÃO — destaque com side-panel
+   ===================================================================== */
+.sup-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,60px);align-items:start}
+.sup-card{background:var(--eucalipto);color:var(--papel);border-radius:var(--r);padding:clamp(2rem,3vw,2.6rem);position:relative;overflow:hidden}
+.sup-card::after{
+  content:"";position:absolute;top:-30px;right:-30px;
+  width:170px;height:170px;border-radius:50%;
+  background:radial-gradient(circle,rgba(184,194,178,.18),transparent 70%);
+}
+.sup-card .eyebrow{color:var(--salvia-clara)}
+.sup-card .eyebrow::before{background:var(--salvia-clara)}
+.sup-card h3{color:var(--papel);font-size:clamp(1.4rem,2.2vw,1.8rem);margin:.7rem 0 .8rem}
+.sup-card .lead{color:rgba(238,239,233,.78);margin-bottom:1.4rem}
+.sup-card .btn{margin-top:.3rem}
+.sup-card ul{list-style:none;display:grid;gap:.6rem;margin:1.2rem 0 1.4rem}
+.sup-card ul li{color:rgba(238,239,233,.85);font-size:.95rem;padding-left:1.2rem;position:relative}
+.sup-card ul li::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:1px;background:var(--salvia-clara)}
+
+.sup-side{padding:1rem 0}
+.sup-side .eyebrow{margin-bottom:.7rem}
+.sup-side h3{font-size:clamp(1.3rem,2vw,1.65rem);margin-bottom:1rem}
+.sup-side p{color:var(--tinta-60);max-width:46ch;margin-bottom:1rem}
+.sup-side blockquote{font-family:var(--ff-display);font-style:italic;font-size:1.1rem;line-height:1.5;border-left:2px solid var(--argila);padding-left:1.2rem;margin-top:1.4rem;color:var(--tinta);font-variation-settings:"opsz" 36}
+.sup-side cite{display:block;font-family:var(--ff-mono);font-style:normal;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta-60);margin-top:.7rem}
+
+@media(max-width:880px){.sup-grid{grid-template-columns:1fr}}
+
+/* =====================================================================
+   GRUPOS DE ESTUDO
+   ===================================================================== */
+.groups-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:clamp(30px,4vw,50px)}
+.group{border:1px solid var(--salvia);border-radius:var(--r);padding:1.6rem 1.4rem;background:var(--papel);position:relative;transition:border-color .3s ease,transform .3s ease}
+.group:hover{transform:translateY(-4px);border-color:var(--argila)}
+.group .when{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--argila);text-transform:uppercase}
+.group h3{font-size:1.2rem;margin:.6rem 0 .5rem}
+.group p{color:var(--tinta-60);font-size:.93rem}
+.group .author{font-family:var(--ff-display);font-style:italic;color:var(--tinta);margin-top:.7rem;display:block;font-variation-settings:"opsz" 36}
+@media(max-width:880px){.groups-grid{grid-template-columns:1fr}}
+
+/* =====================================================================
+   DEPOIMENTOS
+   ===================================================================== */
+.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin-top:clamp(30px,4vw,52px)}
+.testi{background:var(--papel);border:1px solid rgba(238,239,233,.18);border-radius:var(--r);padding:1.8rem;color:var(--tinta)}
+.section--dark .testi{background:rgba(238,239,233,.05);border-color:rgba(238,239,233,.16);color:var(--papel)}
+.testi p{font-family:var(--ff-display);font-style:italic;font-size:1.08rem;line-height:1.5;font-variation-settings:"opsz" 36}
+.testi footer{margin-top:1.1rem;font-family:var(--ff-mono);font-size:.74rem;letter-spacing:.06em}
+.section--dark .testi footer{color:var(--salvia-clara)}
+.testi footer span{color:var(--tinta-60)}
+.section--dark .testi footer span{color:rgba(238,239,233,.55)}
+@media(max-width:880px){.quotes{grid-template-columns:1fr}}
+
+/* CTA FINAL */
+.final{text-align:center}
+.final h2{max-width:22ch;margin:.6rem auto 1.2rem}
+.final .lead{max-width:46ch;margin-inline:auto}
+.final .btn{margin-top:1.9rem}
+
+/* RODAPÉ */
+.footer{background:var(--tinta);color:var(--papel);padding-block:clamp(50px,7vw,80px)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
+.footer .brand{color:var(--papel)}
+.footer .brand small{color:rgba(238,239,233,.5)}
+.footer p{font-size:.92rem;color:rgba(238,239,233,.65);margin-top:1rem;max-width:34ch}
+.foot-col h4{font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--salvia-clara);margin-bottom:1rem}
+.foot-col a,.foot-col span{display:block;font-size:.94rem;color:rgba(238,239,233,.78);margin-bottom:.6rem}
+.foot-col a:hover{color:var(--argila)}
+.foot-bottom{border-top:1px solid rgba(238,239,233,.14);margin-top:2.6rem;padding-top:1.6rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-family:var(--ff-mono);font-size:.72rem;color:rgba(238,239,233,.5)}
+@media(max-width:880px){.foot-grid{grid-template-columns:1fr 1fr}.footer .brand-col{grid-column:1/-1}}
+@media(max-width:540px){.foot-grid{grid-template-columns:1fr}}
+
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:50;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.6);transition:transform .25s ease}
+.float-wa:hover{transform:scale(1.08)}
+.float-wa svg{width:30px;height:30px;fill:#fff}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+.skip{position:absolute;left:-999px;top:0;background:var(--tinta);color:#fff;padding:.7rem 1rem;z-index:100;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+:focus-visible{outline:2px solid var(--argila);outline-offset:3px;border-radius:4px}
+</style>
+</head>
+
+<body>
+<a href="#main" class="skip">Pular para o conteúdo</a>
+
+<header class="header" id="header">
+  <a href="index.html" class="brand" aria-label="Instituto HumanLab — início">
+    HumanLab<small>Instituto de Psicanálise</small>
+  </a>
+  <nav class="nav" id="nav" aria-label="Navegação principal">
+    <a href="publico.html">Atendimento</a>
+    <a href="profissionais.html" aria-current="page">Profissionais</a>
+    <a href="doce-escuta.html">Doce Escuta</a>
+    <a href="#sup">Supervisão</a>
+    <a class="btn btn--primary" data-wa>Falar no WhatsApp</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="pf-hero">
+  <div class="wrap">
+    <span class="back-to-hub"><a href="index.html">voltar ao hub</a></span>
+    <span class="chapter-tag">Capítulo II · Para quem cuida</span>
+    <h1>Uma clínica embasada começa por uma <em>formação contínua.</em></h1>
+    <p class="lead">Cursos, supervisão e grupos de estudo para psicólogos e psicanalistas que tratam a própria escuta como ferramenta — e sabem que ela precisa ser afiada todos os dias.</p>
+    <div class="hero-cta">
+      <a class="btn btn--primary" data-wa>Falar sobre supervisão</a>
+      <a class="btn btn--ghost" href="#cursos">Ver cursos abertos</a>
+    </div>
+
+    <div class="pf-stats">
+      <div class="stat"><div class="num">+10</div><div class="lbl">anos de clínica</div></div>
+      <div class="stat"><div class="num">3</div><div class="lbl">frentes de formação</div></div>
+      <div class="stat"><div class="num">∞</div><div class="lbl">supervisão individual</div></div>
+      <div class="stat"><div class="num">SP+BR</div><div class="lbl">presencial e online</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FRENTES -->
+<section class="section" id="frentes">
+  <div class="wrap">
+    <div class="head-block reveal">
+      <span class="eyebrow">Três frentes</span>
+      <h2>Por onde você quer começar?</h2>
+      <p class="lead" style="margin-top:.8rem">Cada frente atende um momento diferente da sua trajetória. Você escolhe — ou combinamos um caminho juntos.</p>
+    </div>
+    <div class="fronts">
+      <article class="front reveal">
+        <span class="marker">i</span>
+        <span class="k">Supervisão</span>
+        <h3>Para a clínica viva</h3>
+        <p>Um espaço de elaboração do saber do analista, antes, durante e depois de cada atendimento — individual ou em grupo.</p>
+        <ul>
+          <li>Supervisão individual semanal/quinzenal</li>
+          <li>Pequenos grupos de supervisão</li>
+          <li>Escrita e apresentação de caso</li>
+        </ul>
+        <a class="lnk" href="#sup">Saber mais</a>
+      </article>
+
+      <article class="front reveal">
+        <span class="marker">ii</span>
+        <span class="k">Cursos online</span>
+        <h3>Para aprofundar temas</h3>
+        <p>Cursos focados sobre os assuntos que atravessam a clínica contemporânea — transgeracionalidade, vínculos, maternidade.</p>
+        <ul>
+          <li>Aulas gravadas + encontros ao vivo</li>
+          <li>Material de estudo e bibliografia</li>
+          <li>Comunidade de discussão</li>
+        </ul>
+        <a class="lnk" href="#cursos">Ver agenda</a>
+      </article>
+
+      <article class="front reveal">
+        <span class="marker">iii</span>
+        <span class="k">Grupos de estudo</span>
+        <h3>Para ler em companhia</h3>
+        <p>Encontros entre profissionais para estudar, em profundidade, autores e temas fundamentais da psicanálise.</p>
+        <ul>
+          <li>Encontros mensais ao vivo</li>
+          <li>Leitura compartilhada e dirigida</li>
+          <li>Trocas entre clínicos em formação</li>
+        </ul>
+        <a class="lnk" href="#grupos">Entrar na lista</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CATÁLOGO DE CURSOS -->
+<section class="section courses" id="cursos">
+  <div class="wrap">
+    <div class="head-block reveal">
+      <span class="eyebrow">Catálogo de cursos</span>
+      <h2>O que está aberto agora</h2>
+      <p class="lead" style="margin-top:.8rem">Cursos online, com encontros ao vivo e material de estudo. Combine no WhatsApp para entrar na próxima turma.</p>
+    </div>
+    <div class="course-list reveal">
+
+      <a class="course" data-wa>
+        <span class="ord">N° 01</span>
+        <div class="meta">
+          <h3>Transgeracionalidade — o que herdamos sem perceber</h3>
+          <p class="desc">Como as histórias e os silêncios de uma família atravessam gerações e chegam ao consultório. Uma leitura clínica do que se transmite sem palavras.</p>
+          <div class="tags">
+            <span class="tag live">Próxima turma</span>
+            <span class="tag">8 encontros</span>
+            <span class="tag">Online ao vivo</span>
+          </div>
+        </div>
+        <span class="cta-mini">Reservar vaga</span>
+      </a>
+
+      <a class="course" data-wa>
+        <span class="ord">N° 02</span>
+        <div class="meta">
+          <h3>Psicanálise de casais — clínica do vínculo</h3>
+          <p class="desc">A escuta do que se passa entre dois. Estrutura, contrato, sintoma compartilhado e o lugar do analista no triângulo da sessão.</p>
+          <div class="tags">
+            <span class="tag">6 encontros</span>
+            <span class="tag">Online ao vivo</span>
+            <span class="tag">Indicado para clínicos</span>
+          </div>
+        </div>
+        <span class="cta-mini">Mais informações</span>
+      </a>
+
+      <a class="course" data-wa>
+        <span class="ord">N° 03</span>
+        <div class="meta">
+          <h3>Mãe-bebê — os primeiros tempos do encontro</h3>
+          <p class="desc">A clínica da gestação, do puerpério e do encontro inicial entre mãe e bebê. Winnicott, Aulagnier e a constituição do psiquismo.</p>
+          <div class="tags">
+            <span class="tag">5 encontros</span>
+            <span class="tag">Online ao vivo</span>
+          </div>
+        </div>
+        <span class="cta-mini">Mais informações</span>
+      </a>
+
+      <a class="course" data-wa>
+        <span class="ord">N° 04</span>
+        <div class="meta">
+          <h3>Relações abusivas — controle disfarçado de cuidado</h3>
+          <p class="desc">Como reconhecer e nomear, no consultório, dinâmicas de controle que se passam por amor. Manejo clínico e implicação do analista.</p>
+          <div class="tags">
+            <span class="tag">4 encontros</span>
+            <span class="tag">Online ao vivo</span>
+          </div>
+        </div>
+        <span class="cta-mini">Mais informações</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- SUPERVISÃO -->
+<section class="section" id="sup">
+  <div class="wrap sup-grid">
+    <div class="sup-card reveal">
+      <span class="eyebrow">Supervisão clínica</span>
+      <h3>Um espaço onde o saber se elabora</h3>
+      <p class="lead">Para psicólogos e psicanalistas que querem pensar a própria clínica em companhia — com rigor teórico, sigilo e implicação.</p>
+      <ul>
+        <li>Sessões individuais (semanais ou quinzenais)</li>
+        <li>Pequenos grupos de supervisão (até 5 pessoas)</li>
+        <li>Acompanhamento da escrita de caso</li>
+        <li>Discussão de casos atravessados por transferência complexa</li>
+      </ul>
+      <a class="btn btn--primary" data-wa>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.5 23.5l1.6-6A11.5 11.5 0 1112 23.5a11.4 11.4 0 01-5.9-1.6l-5.6 1.6zm6-3.9l.4.2a9.5 9.5 0 005 1.4 9.6 9.6 0 10-9.6-9.6 9.5 9.5 0 001.5 5.1l.2.4-1 3.5 3.5-.9z"/></svg>
+        Combinar supervisão
+      </a>
+    </div>
+    <div class="sup-side reveal">
+      <span class="eyebrow">A escuta da analista</span>
+      <h3>Teoria e prática que caminham juntas</h3>
+      <p>Formação sólida em Sedes Sapientiae, CEP e mestrado em Ciências Humanas pela Universidade do Porto. A supervisão acontece sob essa base — e respeita o estilo clínico de quem chega.</p>
+      <p>Cada caso é tratado com sigilo absoluto. O foco é o desenvolvimento do analista — não a "correção" de uma prática, mas a abertura de outros caminhos possíveis para a escuta.</p>
+      <blockquote>
+        Supervisionar é abrir, junto com o outro, possibilidades para o que ainda não foi escutado em sessão.
+        <cite>Alessandra Lessa</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- GRUPOS DE ESTUDO -->
+<section class="section" id="grupos" style="background:var(--papel-2)">
+  <div class="wrap">
+    <div class="head-block reveal">
+      <span class="eyebrow">Grupos de estudo</span>
+      <h2>Ler em companhia, escutar melhor</h2>
+      <p class="lead" style="margin-top:.8rem">Grupos pequenos, com leitura dirigida e discussão entre pares. Para quem quer aprofundar autores específicos sem perder a clínica de vista.</p>
+    </div>
+    <div class="groups-grid">
+      <article class="group reveal">
+        <span class="when">Mensal · Online</span>
+        <h3>Winnicott em leitura lenta</h3>
+        <p>Os textos fundamentais do pediatra-analista, lidos em ritmo próprio, com tempo para a digestão clínica.</p>
+        <span class="author">"O ambiente facilitador" · "Brincar e a realidade"</span>
+      </article>
+      <article class="group reveal">
+        <span class="when">Mensal · Online</span>
+        <h3>Casal e família — escola francesa</h3>
+        <p>Anzieu, Eiguer e a tradição francesa da psicanálise dos vínculos. Conceitos centrais e suas implicações na clínica.</p>
+        <span class="author">Anzieu · Eiguer · Granjon</span>
+      </article>
+      <article class="group reveal">
+        <span class="when">Quinzenal · Online</span>
+        <h3>Transgeracionalidade clínica</h3>
+        <p>O que se transmite de uma geração à outra. Faimberg, Abraham e Torok, e a clínica do fantasma familiar.</p>
+        <span class="author">Faimberg · Abraham · Torok</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="section section--dark" id="depoimentos">
+  <div class="wrap">
+    <div class="head-block reveal">
+      <span class="eyebrow">Quem estuda com a Alessandra</span>
+      <h2>Profissionais que voltaram à clínica diferentes</h2>
+    </div>
+    <div class="quotes">
+      <blockquote class="testi reveal">
+        <p>"Como supervisora, demonstra um profundo compromisso com o meu desenvolvimento. Traz insights valiosos e une teoria e prática de forma muito assertiva."</p>
+        <footer>Carolina Bezerra <span>· psicóloga</span></footer>
+      </blockquote>
+      <blockquote class="testi reveal">
+        <p>"Conduz o espaço de forma completa: na teoria, na prática e na escrita clínica. No exercício de um pensar compartilhado, ampliou meu olhar e minha escuta."</p>
+        <footer>Claudia Marioto <span>· psicóloga</span></footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section final">
+  <div class="wrap reveal">
+    <span class="eyebrow" style="justify-content:center">Próximo passo</span>
+    <h2>A formação séria começa por uma conversa séria.</h2>
+    <p class="lead">Conte para a Alessandra onde você está na sua trajetória — e descobrimos juntos qual frente faz sentido para o seu momento.</p>
+    <a class="btn btn--primary" data-wa>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.5 23.5l1.6-6A11.5 11.5 0 1112 23.5a11.4 11.4 0 01-5.9-1.6l-5.6 1.6zm6-3.9l.4.2a9.5 9.5 0 005 1.4 9.6 9.6 0 10-9.6-9.6 9.5 9.5 0 001.5 5.1l.2.4-1 3.5 3.5-.9z"/></svg>
+      Iniciar conversa
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div class="brand-col">
+      <span class="brand">HumanLab<small>Instituto de Psicanálise</small></span>
+      <p>Psicanálise clínica, formação contínua e impacto social, sob a direção da psicanalista Alessandra Lessa.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Os três caminhos</h4>
+      <a href="publico.html">Atendimento clínico</a>
+      <a href="profissionais.html">Formação para profissionais</a>
+      <a href="doce-escuta.html">Doce Escuta · projeto social</a>
+    </div>
+    <div class="foot-col">
+      <h4>Contato</h4>
+      <a data-wa>WhatsApp</a>
+      <a href="https://www.instagram.com/instituto.humanlab/" target="_blank" rel="noopener">Instagram @instituto.humanlab</a>
+      <span>Moema · São Paulo/SP</span>
+      <span>Online · todo o Brasil</span>
+      <span>CRP 06/127622</span>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© <span id="year"></span> Instituto HumanLab. Todos os direitos reservados.</span>
+    <span>Alessandra Themudo Lessa · Psicóloga e Psicanalista</span>
+  </div>
+</footer>
+
+<a class="float-wa" data-wa aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M.5 23.5l1.6-6A11.5 11.5 0 1112 23.5a11.4 11.4 0 01-5.9-1.6l-5.6 1.6zm6-3.9l.4.2a9.5 9.5 0 005 1.4 9.6 9.6 0 10-9.6-9.6 9.5 9.5 0 001.5 5.1l.2.4-1 3.5 3.5-.9z"/></svg>
+</a>
+
+<script>
+const WHATSAPP = "5511999999999";
+const MENSAGEM = "Olá! Vim pelo site do HumanLab — quero saber sobre supervisão, cursos ou grupos de estudo.";
+const waLink = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(MENSAGEM);
+document.querySelectorAll("[data-wa]").forEach(el=>{el.setAttribute("href",waLink);el.setAttribute("target","_blank");el.setAttribute("rel","noopener")});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const header = document.getElementById("header");
+addEventListener("scroll",()=>header.classList.toggle("scrolled", scrollY>40),{passive:true});
+
+const burger = document.getElementById("burger");
+const nav = document.getElementById("nav");
+function toggleMenu(open){
+  nav.classList.toggle("open",open);burger.classList.toggle("open",open);header.classList.toggle("menu-open",open);burger.setAttribute("aria-expanded",open);document.body.style.overflow=open?"hidden":"";
+}
+burger.addEventListener("click",()=>toggleMenu(!nav.classList.contains("open")));
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>toggleMenu(false)));
+
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

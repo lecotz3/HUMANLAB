@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<title>Doce Escuta — Uma bolacha que conecta cuidado, formação e impacto social | Instituto HumanLab</title>
+<meta name="description" content="Doce Escuta: biscoitos artesanais cujo lucro converte parte de cada pacote em sessões de psicoterapia para quem não tem acesso. Um projeto social do Instituto HumanLab.">
+<meta name="author" content="Instituto HumanLab — Alessandra Themudo Lessa">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://institutohumanlab.com.br/doce-escuta.html">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Instituto HumanLab">
+<meta property="og:title" content="Doce Escuta — Pequenos gestos, grandes transformações">
+<meta property="og:description" content="Uma bolacha que conecta cuidado, formação e impacto social. 65% do lucro vira sessão de terapia para quem precisa.">
+<meta property="og:image" content="assets/doce-escuta-sacola.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* =====================================================================
+   DOCE ESCUTA · Sub-marca do Instituto HumanLab
+   ===================================================================== */
+:root{
+  /* Sub-paleta Doce Escuta */
+  --de-papel:#F0EBDA;          /* creme kraft */
+  --de-papel-2:#E5DEC7;        /* creme mais fechado */
+  --de-mata:#1F3328;           /* verde-escuro denso (embalagem) */
+  --de-folha:#4A6240;          /* folha de oliveira */
+  --de-biscoito:#C9986B;       /* biscoito assado */
+  --de-biscoito-claro:#E5C8A2;
+  --de-coracao:#8B3A2F;        /* vermelho terroso */
+  --de-tinta-60:rgba(31,51,40,.62);
+  --de-tinta-30:rgba(31,51,40,.28);
+  --de-tinta-12:rgba(31,51,40,.12);
+
+  /* Tokens HumanLab (para o header herdar) */
+  --tinta:#1E2B26;
+  --argila:#C0694A;
+
+  --ff-display:"Fraunces", Georgia, serif;
+  --ff-body:"Hanken Grotesk", system-ui, sans-serif;
+  --ff-mono:"IBM Plex Mono", ui-monospace, monospace;
+
+  --maxw:1180px;
+  --gut:clamp(20px,5vw,64px);
+  --r:14px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:var(--ff-body);
+  background:var(--de-papel);
+  color:var(--de-mata);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+h1,h2,h3{font-family:var(--ff-display);font-weight:500;line-height:1.04;letter-spacing:-.02em;font-variation-settings:"opsz" 144}
+h2{font-size:clamp(1.9rem,4.4vw,3.1rem)}
+h3{font-size:clamp(1.25rem,2.4vw,1.6rem)}
+p{font-size:clamp(1rem,1.15vw,1.08rem)}
+
+.eyebrow{
+  font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--de-coracao);display:inline-flex;align-items:center;gap:.6rem;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--de-coracao);display:inline-block}
+.lead{font-size:clamp(1.08rem,1.6vw,1.3rem);color:var(--de-tinta-60);line-height:1.5}
+
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gut)}
+.section{padding-block:clamp(64px,9vw,128px);position:relative}
+.section--mata{background:var(--de-mata);color:var(--de-papel)}
+.section--mata .lead{color:rgba(240,235,218,.78)}
+.section--mata .eyebrow{color:var(--de-biscoito-claro)}
+.section--mata .eyebrow::before{background:var(--de-biscoito-claro)}
+
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--ff-body);font-weight:600;font-size:.98rem;padding:.9rem 1.5rem;border-radius:100px;border:1.5px solid transparent;cursor:pointer;transition:transform .25s ease,background .25s ease,box-shadow .25s ease,color .25s ease,border-color .25s ease;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn--primary{background:var(--de-coracao);color:var(--de-papel);box-shadow:0 6px 20px -8px rgba(139,58,47,.55)}
+.btn--primary:hover{background:#71291f;transform:translateY(-2px)}
+.btn--mata{background:var(--de-mata);color:var(--de-papel)}
+.btn--mata:hover{background:#0e1d15;transform:translateY(-2px)}
+.btn--ghost{background:transparent;border-color:var(--de-tinta-30);color:var(--de-mata)}
+.btn--ghost:hover{border-color:var(--de-mata);transform:translateY(-2px)}
+.section--mata .btn--ghost{border-color:rgba(240,235,218,.4);color:var(--de-papel)}
+.section--mata .btn--ghost:hover{border-color:var(--de-papel)}
+
+/* HEADER (versão sub-marca: cores do Doce Escuta mas mesma estrutura) */
+.header{position:fixed;inset:0 0 auto 0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:1rem var(--gut);transition:background .3s ease,box-shadow .3s ease,padding .3s ease}
+.header.scrolled{background:rgba(240,235,218,.9);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--de-tinta-12);padding-block:.7rem}
+.brand{display:flex;flex-direction:column;line-height:1;font-family:var(--ff-display);font-weight:600;font-size:1.35rem;font-variation-settings:"opsz" 144;color:var(--de-mata)}
+.brand small{font-family:var(--ff-mono);font-weight:400;font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:var(--de-tinta-60);margin-top:3px}
+.nav{display:flex;align-items:center;gap:2rem}
+.nav a{font-size:.95rem;font-weight:500;position:relative;color:var(--de-mata)}
+.nav a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:1.5px;background:var(--de-coracao);transition:width .3s ease}
+.nav a:hover::after,.nav a[aria-current="page"]::after{width:100%}
+.header .btn{padding:.6rem 1.1rem;font-size:.9rem}
+
+.burger{display:none;background:none;border:0;cursor:pointer;width:30px;height:24px;position:relative}
+.burger span{position:absolute;left:0;height:2px;width:100%;background:var(--de-mata);transition:.3s;border-radius:2px}
+.burger span:nth-child(1){top:2px}.burger span:nth-child(2){top:11px}.burger span:nth-child(3){top:20px}
+.burger.open span:nth-child(1){top:11px;transform:rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){top:11px;transform:rotate(-45deg)}
+
+@media(max-width:880px){
+  .nav{position:fixed;inset:0 0 0 auto;width:min(78vw,340px);background:var(--de-mata);color:var(--de-papel);flex-direction:column;justify-content:center;align-items:flex-start;gap:1.4rem;padding:2rem var(--gut);transform:translateX(100%);transition:transform .35s ease;z-index:55}
+  .nav.open{transform:translateX(0)}
+  .nav a{font-size:1.3rem;font-family:var(--ff-display);color:var(--de-papel)}
+  .nav a::after{background:var(--de-biscoito)}
+  .nav .btn{margin-top:1rem}
+  .header .nav .btn{font-size:1rem;padding:.8rem 1.4rem}
+  .burger{display:block;z-index:60}
+  .header.menu-open .burger span{background:var(--de-papel)}
+}
+
+.back-to-hub{font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--de-tinta-60)}
+.back-to-hub a{color:var(--de-tinta-60);transition:color .25s ease}
+.back-to-hub a:hover{color:var(--de-coracao)}
+.back-to-hub::before{content:"← "}
+
+/* =====================================================================
+   HERO · O lettering do Doce Escuta + foto da sacola + manifesto
+   ===================================================================== */
+.de-hero{padding-top:clamp(130px,16vh,180px);padding-bottom:clamp(40px,6vw,80px);position:relative;overflow:hidden}
+.de-hero::before,.de-hero::after{
+  content:"";position:absolute;width:200px;height:120px;
+  background-repeat:no-repeat;background-size:contain;
+  opacity:.45;pointer-events:none;
+}
+/* folhas decorativas em SVG inline via data uri */
+.de-hero::before{
+  top:120px;left:-40px;transform:rotate(-30deg);
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'><g fill='none' stroke='%234A6240' stroke-width='1.4'><path d='M10 80 Q80 30 180 50' /><path d='M40 75 q10 -25 25 -28 q-5 18 -20 28' fill='%234A6240' fill-opacity='.35'/><path d='M85 60 q10 -25 25 -28 q-5 18 -20 28' fill='%234A6240' fill-opacity='.35'/><path d='M130 50 q10 -25 25 -28 q-5 18 -20 28' fill='%234A6240' fill-opacity='.35'/></g></svg>");
+}
+.de-hero::after{
+  top:160px;right:-40px;transform:rotate(30deg) scaleX(-1);
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'><g fill='none' stroke='%234A6240' stroke-width='1.4'><path d='M10 80 Q80 30 180 50' /><path d='M40 75 q10 -25 25 -28 q-5 18 -20 28' fill='%234A6240' fill-opacity='.35'/><path d='M85 60 q10 -25 25 -28 q-5 18 -20 28' fill='%234A6240' fill-opacity='.35'/><path d='M130 50 q10 -25 25 -28 q-5 18 -20 28' fill='%234A6240' fill-opacity='.35'/></g></svg>");
+}
+
+.de-hero .wrap{position:relative;z-index:2}
+.de-hero .chapter-tag{
+  font-family:var(--ff-display);font-style:italic;font-size:1.5rem;
+  color:var(--de-folha);text-align:center;display:block;margin-bottom:.6rem;
+  font-variation-settings:"opsz" 144
+}
+.de-hero .back-link{text-align:center;display:block;margin-bottom:.5rem}
+
+/* LETTERING — opsz alto, peso 600, espaçamento aberto */
+.de-lettering{
+  text-align:center;
+  font-family:var(--ff-display);
+  font-variation-settings:"opsz" 144,"wght" 600;
+  color:var(--de-mata);
+  font-size:clamp(3.2rem,11vw,8rem);
+  line-height:.92;
+  letter-spacing:.02em;
+  margin:.4rem 0 .2rem;
+}
+.de-lettering em{font-style:italic;color:var(--de-folha)}
+.de-divider{
+  display:block;width:140px;height:24px;margin:.4rem auto 1.4rem;
+  color:var(--de-folha);opacity:.7;
+}
+.de-divider svg{width:100%;height:100%;display:block}
+.de-tagline{
+  text-align:center;font-family:var(--ff-display);font-style:italic;
+  font-size:clamp(1.15rem,2vw,1.5rem);color:var(--de-tinta-60);
+  max-width:36ch;margin:0 auto 2rem;line-height:1.4;
+  font-variation-settings:"opsz" 36
+}
+
+/* foto + manifesto lado a lado */
+.de-hero-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);
+  align-items:center;margin-top:clamp(30px,5vw,60px);
+}
+.de-photo{
+  position:relative;
+  border-radius:var(--r);
+  overflow:hidden;
+  aspect-ratio:4/5;
+  box-shadow:0 30px 60px -30px rgba(31,51,40,.4);
+}
+.de-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.de-photo::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(135deg,transparent 60%,rgba(31,51,40,.18));
+  pointer-events:none;
+}
+/* Tag flutuante */
+.de-pill{
+  position:absolute;left:14px;top:14px;
+  background:var(--de-papel);border:1px solid var(--de-folha);
+  border-radius:100px;padding:.45rem .85rem;
+  font-family:var(--ff-mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--de-mata);
+  display:inline-flex;align-items:center;gap:.45rem;
+}
+.de-pill::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--de-coracao)}
+
+.de-manifest{display:flex;flex-direction:column;gap:1.2rem}
+.de-manifest h2{font-size:clamp(1.6rem,3vw,2.2rem);color:var(--de-mata)}
+.de-manifest h2 em{color:var(--de-coracao);font-style:italic}
+.de-manifest .lead{color:var(--de-tinta-60);max-width:38ch}
+.de-manifest .cta-row{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:.4rem}
+
+@media(max-width:880px){
+  .de-hero-grid{grid-template-columns:1fr}
+  .de-photo{max-width:520px;margin-inline:auto}
+}
+
+/* =====================================================================
+   65% — A signature: número monumental
+   ===================================================================== */
+.de-sixtyfive{
+  background:var(--de-mata);color:var(--de-papel);
+  padding-block:clamp(90px,12vw,160px);
+  text-align:center;position:relative;overflow:hidden;
+}
+.de-sixtyfive::before{
+  content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:1px;height:60px;background:linear-gradient(var(--de-biscoito-claro),transparent);
+  opacity:.6;
+}
+.de-sixtyfive .eyebrow{justify-content:center;color:var(--de-biscoito-claro)}
+.de-sixtyfive .eyebrow::before{background:var(--de-biscoito-claro)}
+.de-big-num{
+  font-family:var(--ff-display);font-variation-settings:"opsz" 144,"wght" 500;
+  font-size:clamp(8rem,22vw,17rem);
+  line-height:.86;letter-spacing:-.04em;
+  color:var(--de-biscoito);
+  margin:1.2rem 0 .4rem;
+  display:inline-block;position:relative;
+}
+.de-big-num sup{
+  font-size:.32em;vertical-align:.9em;color:var(--de-papel);
+  font-variation-settings:"opsz" 36,"wght" 500;letter-spacing:0;
+}
+.de-sixtyfive .label{
+  font-family:var(--ff-display);font-style:italic;
+  font-size:clamp(1.2rem,2vw,1.6rem);
+  color:var(--de-papel);max-width:36ch;margin:.4rem auto 0;
+  font-variation-settings:"opsz" 144
+}
+.de-sixtyfive .sub{
+  margin-top:1.4rem;font-family:var(--ff-mono);font-size:.78rem;
+  letter-spacing:.14em;text-transform:uppercase;color:rgba(240,235,218,.6)
+}
+
+/* =====================================================================
+   COMO FUNCIONA · 3 gestos
+   ===================================================================== */
+.gestures{padding-block:clamp(70px,9vw,130px)}
+.gestures-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:clamp(36px,5vw,60px)}
+.gesture{
+  background:var(--de-papel);border:1px solid var(--de-folha);
+  border-radius:var(--r);padding:clamp(1.8rem,3vw,2.4rem);
+  display:flex;flex-direction:column;gap:.6rem;position:relative;
+}
+.gesture .pin{
+  position:absolute;top:-14px;left:24px;
+  background:var(--de-mata);color:var(--de-papel);
+  width:28px;height:28px;border-radius:50%;
+  display:grid;place-items:center;
+  font-family:var(--ff-mono);font-size:.7rem;font-weight:500;
+}
+.gesture .heart{
+  color:var(--de-coracao);width:22px;height:22px;
+}
+.gesture h3{font-size:1.2rem;color:var(--de-mata);margin-top:.7rem}
+.gesture p{color:var(--de-tinta-60);font-size:.97rem}
+@media(max-width:880px){.gestures-grid{grid-template-columns:1fr}}
+
+/* =====================================================================
+   GALERIA · post + sacola
+   ===================================================================== */
+.gallery{background:var(--de-papel-2);padding-block:clamp(70px,9vw,130px)}
+.gallery-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,4vw,48px);align-items:center}
+.gallery-grid figure{margin:0;border-radius:var(--r);overflow:hidden;box-shadow:0 24px 50px -28px rgba(31,51,40,.4)}
+.gallery-grid figure img{width:100%;height:auto;display:block}
+.gallery-side h2{margin-bottom:1rem}
+.gallery-side h2 em{color:var(--de-coracao);font-style:italic}
+.gallery-side .lead{color:var(--de-tinta-60);margin-bottom:1.2rem}
+.gallery-side .ig{
+  display:inline-flex;align-items:center;gap:.55rem;
+  font-family:var(--ff-mono);font-size:.84rem;letter-spacing:.06em;
+  padding:.7rem 1.1rem;border-radius:100px;border:1.5px solid var(--de-folha);
+  color:var(--de-mata);transition:background .25s ease,color .25s ease;
+}
+.gallery-side .ig:hover{background:var(--de-mata);color:var(--de-papel)}
+.gallery-side .ig svg{width:18px;height:18px}
+@media(max-width:880px){.gallery-grid{grid-template-columns:1fr}}
+
+/* =====================================================================
+   PEDIDOS / CONTATO
+   ===================================================================== */
+.order{padding-block:clamp(80px,10vw,150px);text-align:center}
+.order .wrap{max-width:780px}
+.order h2{font-size:clamp(2.2rem,5vw,3.6rem);margin:.8rem auto 1.2rem;max-width:20ch}
+.order h2 em{color:var(--de-coracao);font-style:italic}
+.order .phone{
+  display:inline-flex;align-items:center;gap:.7rem;
+  font-family:var(--ff-display);font-size:clamp(1.4rem,2.6vw,2rem);
+  color:var(--de-mata);margin:1.2rem 0 1.8rem;
+  font-variation-settings:"opsz" 144,"wght" 500;
+}
+.order .phone svg{width:24px;height:24px;color:#25D366}
+.order .lead{max-width:50ch;margin-inline:auto;margin-bottom:1.4rem}
+.order-cta{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap}
+
+/* faixa de propósito (impacto) */
+.purpose{
+  background:var(--de-mata);color:var(--de-papel);
+  padding-block:clamp(70px,9vw,120px);text-align:center;
+}
+.purpose .wrap{max-width:760px}
+.purpose blockquote{
+  font-family:var(--ff-display);font-style:italic;
+  font-size:clamp(1.6rem,3.4vw,2.4rem);line-height:1.3;
+  margin:1.4rem 0;color:var(--de-papel);
+  font-variation-settings:"opsz" 144,"wght" 400;
+}
+.purpose blockquote em{color:var(--de-biscoito);font-style:italic}
+.purpose .small{font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(240,235,218,.65);margin-top:1rem;display:inline-block}
+
+/* RODAPÉ (cor da sub-marca, mas conectado ao Instituto) */
+.footer{background:var(--de-mata);color:var(--de-papel);padding-block:clamp(50px,7vw,80px);border-top:1px solid rgba(240,235,218,.1)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
+.footer .brand{color:var(--de-papel)}
+.footer .brand small{color:rgba(240,235,218,.55)}
+.footer p{font-size:.92rem;color:rgba(240,235,218,.7);margin-top:1rem;max-width:34ch}
+.foot-col h4{font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--de-biscoito-claro);margin-bottom:1rem}
+.foot-col a,.foot-col span{display:block;font-size:.94rem;color:rgba(240,235,218,.8);margin-bottom:.6rem}
+.foot-col a:hover{color:var(--de-biscoito)}
+.foot-bottom{border-top:1px solid rgba(240,235,218,.14);margin-top:2.6rem;padding-top:1.6rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-family:var(--ff-mono);font-size:.72rem;color:rgba(240,235,218,.55)}
+@media(max-width:880px){.foot-grid{grid-template-columns:1fr 1fr}.footer .brand-col{grid-column:1/-1}}
+@media(max-width:540px){.foot-grid{grid-template-columns:1fr}}
+
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:50;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.6);transition:transform .25s ease}
+.float-wa:hover{transform:scale(1.08)}
+.float-wa svg{width:30px;height:30px;fill:#fff}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+.skip{position:absolute;left:-999px;top:0;background:var(--de-mata);color:var(--de-papel);padding:.7rem 1rem;z-index:100;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+:focus-visible{outline:2px solid var(--de-coracao);outline-offset:3px;border-radius:4px}
+</style>
+</head>
+
+<body>
+<a href="#main" class="skip">Pular para o conteúdo</a>
+
+<header class="header" id="header">
+  <a href="index.html" class="brand" aria-label="Instituto HumanLab — início">
+    HumanLab<small>Instituto de Psicanálise</small>
+  </a>
+  <nav class="nav" id="nav" aria-label="Navegação principal">
+    <a href="publico.html">Atendimento</a>
+    <a href="profissionais.html">Profissionais</a>
+    <a href="doce-escuta.html" aria-current="page">Doce Escuta</a>
+    <a href="#como-funciona">Como funciona</a>
+    <a class="btn btn--primary" data-wa>Encomendar</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+<!-- ===================== HERO ===================== -->
+<section class="de-hero">
+  <div class="wrap">
+    <span class="back-link back-to-hub"><a href="index.html">voltar ao hub</a></span>
+    <span class="chapter-tag">Capítulo III · Para que mais gente seja escutada</span>
+
+    <h1 class="de-lettering">Doce <em>Escuta</em></h1>
+
+    <div class="de-divider" aria-hidden="true">
+      <svg viewBox="0 0 140 24" fill="none" stroke="currentColor">
+        <path d="M2 12h54" stroke-width="1"/>
+        <path d="M84 12h54" stroke-width="1"/>
+        <path d="M64 12c2-4 8-4 10 0 -2 4 -8 4 -10 0z" stroke-width="1.4"/>
+      </svg>
+    </div>
+
+    <p class="de-tagline">Uma bolacha que conecta cuidado, formação e impacto social.</p>
+
+    <div class="de-hero-grid">
+      <div class="de-photo reveal">
+        <span class="de-pill">Pacote oficial · 2026</span>
+        <img src="assets/doce-escuta-sacola.jpg" alt="Pacote do Doce Escuta com biscoitos em formato de estrela e selo redondo do projeto" loading="eager">
+      </div>
+      <div class="de-manifest reveal">
+        <span class="eyebrow">Manifesto</span>
+        <h2>Pequenos gestos. <em>Grandes transformações.</em></h2>
+        <p class="lead">Ao escolher o Doce Escuta, você contribui para que pessoas sem acesso à terapia possam ser atendidas com responsabilidade e cuidado.</p>
+        <p style="color:var(--de-tinta-60);max-width:38ch">Cada pacote é uma escutinha. Cada compra é parte do orçamento de uma sessão. É comida que vira escuta — e escuta que vira possibilidade.</p>
+        <div class="cta-row">
+          <a class="btn btn--primary" data-wa>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.5 23.5l1.6-6A11.5 11.5 0 1112 23.5a11.4 11.4 0 01-5.9-1.6l-5.6 1.6zm6-3.9l.4.2a9.5 9.5 0 005 1.4 9.6 9.6 0 10-9.6-9.6 9.5 9.5 0 001.5 5.1l.2.4-1 3.5 3.5-.9z"/></svg>
+            Fazer um pedido
+          </a>
+          <a class="btn btn--ghost" href="#como-funciona">Como funciona</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 65% — SIGNATURE ===================== -->
+<section class="de-sixtyfive">
+  <div class="wrap">
+    <span class="eyebrow">A conta que importa</span>
+    <div class="de-big-num"><span>65</span><sup>%</sup></div>
+    <p class="label">do lucro de cada pacote é convertido em atendimento de psicoterapia para quem não tem como pagar.</p>
+    <span class="sub">Transformando consumo em cuidado</span>
+  </div>
+</section>
+
+<!-- ===================== COMO FUNCIONA · 3 GESTOS ===================== -->
+<section class="gestures" id="como-funciona">
+  <div class="wrap">
+    <div class="reveal" style="max-width:60ch">
+      <span class="eyebrow">Como funciona</span>
+      <h2 style="margin-top:.8rem;color:var(--de-mata)">Três gestos, um ciclo.</h2>
+      <p class="lead" style="margin-top:.8rem">Uma engrenagem simples — biscoitos artesanais que sustentam sessões reais, com profissionais formados.</p>
+    </div>
+    <div class="gestures-grid">
+      <article class="gesture reveal">
+        <span class="pin">i</span>
+        <svg class="heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7-4.5-9.3-9.2C1.1 8.4 3.2 5 6.6 5c2 0 3.4 1 4.4 2.3l1 .9 1-.9C13.9 6 15.4 5 17.4 5c3.4 0 5.5 3.4 4 6.8C19 16.5 12 21 12 21z"/></svg>
+        <h3>Você consome com propósito</h3>
+        <p>Encomenda um pacote — biscoito artesanal feito com cuidado, em pequenas fornadas, embalado e entregue.</p>
+      </article>
+      <article class="gesture reveal">
+        <span class="pin">ii</span>
+        <svg class="heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7-4.5-9.3-9.2C1.1 8.4 3.2 5 6.6 5c2 0 3.4 1 4.4 2.3l1 .9 1-.9C13.9 6 15.4 5 17.4 5c3.4 0 5.5 3.4 4 6.8C19 16.5 12 21 12 21z"/></svg>
+        <h3>O lucro vira escuta</h3>
+        <p>65% do lucro de cada pacote é separado para custear sessões de psicoterapia destinadas a pessoas sem acesso ao cuidado.</p>
+      </article>
+      <article class="gesture reveal">
+        <span class="pin">iii</span>
+        <svg class="heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7-4.5-9.3-9.2C1.1 8.4 3.2 5 6.6 5c2 0 3.4 1 4.4 2.3l1 .9 1-.9C13.9 6 15.4 5 17.4 5c3.4 0 5.5 3.4 4 6.8C19 16.5 12 21 12 21z"/></svg>
+        <h3>Profissionais entram em cena</h3>
+        <p>Psicólogos formados pelo Instituto HumanLab atendem essas pessoas, garantindo escuta com a mesma seriedade clínica.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALERIA · POST ===================== -->
+<section class="gallery" id="galeria">
+  <div class="wrap gallery-grid">
+    <figure class="reveal">
+      <img src="assets/doce-escuta-post.jpg" alt="Post do Instagram do Instituto HumanLab apresentando o Doce Escuta — biscoitos em formato de estrela em um pote, ao lado do lettering em verde escuro e folhagens decorativas">
+    </figure>
+    <div class="gallery-side reveal">
+      <span class="eyebrow">Conheça o projeto</span>
+      <h2>Uma bolacha. <em>Uma escuta. Um ciclo.</em></h2>
+      <p class="lead">O Doce Escuta nasce de uma pergunta simples: e se um gesto cotidiano — comer um biscoito — pudesse abrir uma porta para alguém ser escutado?</p>
+      <p style="color:var(--de-tinta-60);margin-bottom:1.4rem">Foi assim que nasceu este projeto social do Instituto HumanLab: biscoitos artesanais cujo lucro sustenta sessões reais de psicoterapia para quem não tem como pagar. O resto da história está no nosso Instagram.</p>
+      <a class="ig" href="https://www.instagram.com/instituto.humanlab/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        @instituto.humanlab
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROPÓSITO ===================== -->
+<section class="purpose">
+  <div class="wrap reveal">
+    <span class="eyebrow" style="justify-content:center">Por que isto importa</span>
+    <blockquote>
+      Acesso à saúde mental ainda é privilégio. <em>Doce Escuta</em> é uma das formas, pequena e teimosa, de fazer essa conta começar a fechar.
+    </blockquote>
+    <span class="small">Instituto HumanLab · 2026</span>
+  </div>
+</section>
+
+<!-- ===================== PEDIDOS ===================== -->
+<section class="order" id="pedidos">
+  <div class="wrap reveal">
+    <span class="eyebrow" style="justify-content:center">Pedidos e encomendas</span>
+    <h2>Junte-se ao gesto. <em>Comece pelo primeiro pacote.</em></h2>
+    <p class="lead">Pedidos pelo WhatsApp ou pelo Instagram. Entregamos em São Paulo e enviamos para outras cidades sob combinação.</p>
+    <div class="phone">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.5 23.5l1.6-6A11.5 11.5 0 1112 23.5a11.4 11.4 0 01-5.9-1.6l-5.6 1.6zm6-3.9l.4.2a9.5 9.5 0 005 1.4 9.6 9.6 0 10-9.6-9.6 9.5 9.5 0 001.5 5.1l.2.4-1 3.5 3.5-.9z"/></svg>
+      (11) 98306-4288
+    </div>
+    <div class="order-cta">
+      <a class="btn btn--primary" data-wa>Encomendar pelo WhatsApp</a>
+      <a class="btn btn--ghost" href="https://www.instagram.com/instituto.humanlab/" target="_blank" rel="noopener">Conversar no Instagram</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div class="brand-col">
+      <span class="brand">HumanLab<small>Instituto de Psicanálise</small></span>
+      <p>Doce Escuta é um projeto social do Instituto HumanLab, sob a direção da psicanalista Alessandra Lessa.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Os três caminhos</h4>
+      <a href="publico.html">Atendimento clínico</a>
+      <a href="profissionais.html">Formação para profissionais</a>
+      <a href="doce-escuta.html">Doce Escuta · projeto social</a>
+    </div>
+    <div class="foot-col">
+      <h4>Contato</h4>
+      <a data-wa>WhatsApp (11) 98306-4288</a>
+      <a href="https://www.instagram.com/instituto.humanlab/" target="_blank" rel="noopener">Instagram @instituto.humanlab</a>
+      <span>Moema · São Paulo/SP</span>
+      <span>CRP 06/127622</span>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© <span id="year"></span> Instituto HumanLab. Todos os direitos reservados.</span>
+    <span>Alessandra Themudo Lessa · Psicóloga e Psicanalista</span>
+  </div>
+</footer>
+
+<a class="float-wa" data-wa aria-label="Encomendar pelo WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M.5 23.5l1.6-6A11.5 11.5 0 1112 23.5a11.4 11.4 0 01-5.9-1.6l-5.6 1.6zm6-3.9l.4.2a9.5 9.5 0 005 1.4 9.6 9.6 0 10-9.6-9.6 9.5 9.5 0 001.5 5.1l.2.4-1 3.5 3.5-.9z"/></svg>
+</a>
+
+<script>
+const WHATSAPP = "5511983064288";
+const MENSAGEM = "Olá! Quero encomendar o Doce Escuta — vim pelo site do Instituto HumanLab.";
+const waLink = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(MENSAGEM);
+document.querySelectorAll("[data-wa]").forEach(el=>{el.setAttribute("href",waLink);el.setAttribute("target","_blank");el.setAttribute("rel","noopener")});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const header = document.getElementById("header");
+addEventListener("scroll",()=>header.classList.toggle("scrolled", scrollY>40),{passive:true});
+
+const burger = document.getElementById("burger");
+const nav = document.getElementById("nav");
+function toggleMenu(open){
+  nav.classList.toggle("open",open);burger.classList.toggle("open",open);header.classList.toggle("menu-open",open);burger.setAttribute("aria-expanded",open);document.body.style.overflow=open?"hidden":"";
+}
+burger.addEventListener("click",()=>toggleMenu(!nav.classList.contains("open")));
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>toggleMenu(false)));
+
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
