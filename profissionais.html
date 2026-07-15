@@ -33,7 +33,7 @@
   --salvia-clara:#B8C2B2;
   --argila:#C0694A;
   --argila-escura:#A8573B;
-  --tinta-60:rgba(30,43,38,.62);
+  --tinta-60:rgba(30,43,38,.72);
   --tinta-30:rgba(30,43,38,.28);
   --tinta-12:rgba(30,43,38,.12);
 
@@ -51,7 +51,7 @@ html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{font-family:var(--ff-body);background:var(--papel);color:var(--tinta);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
+a{color:inherit;text-decoration:none;touch-action:manipulation}
 
 h1,h2,h3{font-family:var(--ff-display);font-weight:500;line-height:1.06;letter-spacing:-.015em;font-variation-settings:"opsz" 144}
 h1{font-size:clamp(2.4rem,6.2vw,4.4rem)}
@@ -108,7 +108,7 @@ p{font-size:clamp(1rem,1.15vw,1.08rem)}
 }
 
 .back-to-hub{font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta-60)}
-.back-to-hub a{color:var(--tinta-60);transition:color .25s ease}
+.back-to-hub a{color:var(--tinta-60);transition:color .25s ease;display:inline-block;padding:.45rem .2rem;margin:-.45rem -.2rem}
 .back-to-hub a:hover{color:var(--argila)}
 .back-to-hub::before{content:"← "}
 

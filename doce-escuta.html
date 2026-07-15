@@ -34,7 +34,7 @@
   --de-biscoito:#C9986B;       /* biscoito assado */
   --de-biscoito-claro:#E5C8A2;
   --de-coracao:#8B3A2F;        /* vermelho terroso */
-  --de-tinta-60:rgba(31,51,40,.62);
+  --de-tinta-60:rgba(31,51,40,.72);
   --de-tinta-30:rgba(31,51,40,.28);
   --de-tinta-12:rgba(31,51,40,.12);
 
@@ -63,7 +63,7 @@ body{
   overflow-x:hidden;
 }
 img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
+a{color:inherit;text-decoration:none;touch-action:manipulation}
 
 h1,h2,h3{font-family:var(--ff-display);font-weight:500;line-height:1.04;letter-spacing:-.02em;font-variation-settings:"opsz" 144}
 h2{font-size:clamp(1.9rem,4.4vw,3.1rem)}
@@ -125,7 +125,7 @@ p{font-size:clamp(1rem,1.15vw,1.08rem)}
 }
 
 .back-to-hub{font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--de-tinta-60)}
-.back-to-hub a{color:var(--de-tinta-60);transition:color .25s ease}
+.back-to-hub a{color:var(--de-tinta-60);transition:color .25s ease;display:inline-block;padding:.45rem .2rem;margin:-.45rem -.2rem}
 .back-to-hub a:hover{color:var(--de-coracao)}
 .back-to-hub::before{content:"← "}
 
@@ -403,7 +403,7 @@ p{font-size:clamp(1rem,1.15vw,1.08rem)}
     <div class="de-hero-grid">
       <div class="de-photo reveal">
         <span class="de-pill">Pacote oficial · 2026</span>
-        <img src="assets/doce-escuta-sacola.jpg" alt="Pacote do Doce Escuta com biscoitos em formato de estrela e selo redondo do projeto" loading="eager">
+        <img src="assets/doce-escuta-sacola.jpg" alt="Pacote do Doce Escuta com biscoitos em formato de estrela e selo redondo do projeto" width="568" height="877" loading="eager">
       </div>
       <div class="de-manifest reveal">
         <span class="eyebrow">Manifesto</span>
@@ -467,7 +467,7 @@ p{font-size:clamp(1rem,1.15vw,1.08rem)}
 <section class="gallery" id="galeria">
   <div class="wrap gallery-grid">
     <figure class="reveal">
-      <img src="assets/doce-escuta-post.jpg" alt="Post do Instagram do Instituto HumanLab apresentando o Doce Escuta — biscoitos em formato de estrela em um pote, ao lado do lettering em verde escuro e folhagens decorativas">
+      <img src="assets/doce-escuta-post.jpg" alt="Post do Instagram do Instituto HumanLab apresentando o Doce Escuta — biscoitos em formato de estrela em um pote, ao lado do lettering em verde escuro e folhagens decorativas" width="738" height="1600" loading="lazy">
     </figure>
     <div class="gallery-side reveal">
       <span class="eyebrow">Conheça o projeto</span>
