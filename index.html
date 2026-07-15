@@ -387,6 +387,30 @@ p{font-size:clamp(1rem,1.15vw,1.08rem)}
 .skip{position:absolute;left:-999px;top:0;background:var(--tinta);color:#fff;padding:.7rem 1rem;z-index:100;border-radius:0 0 8px 0}
 .skip:focus{left:0}
 :focus-visible{outline:2px solid var(--argila);outline-offset:3px;border-radius:4px}
+
+/* =====================================================================
+   REFINEMENTS · precisão editorial (Tier 1 + 2)
+   ===================================================================== */
+html{color-scheme:light;scrollbar-width:thin;scrollbar-color:var(--salvia) transparent}
+::selection{background:var(--argila);color:#fff}
+[id]{scroll-margin-top:5.5rem}
+h1,h2,h3{text-wrap:balance}
+p,.lead{text-wrap:pretty}
+.crp-badge{font-variant-numeric:tabular-nums}
+/* motion: ease-out expo + stagger em cascata */
+.reveal{transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)}
+.chapters-grid .reveal:nth-child(2){transition-delay:.07s}
+.chapters-grid .reveal:nth-child(3){transition-delay:.14s}
+/* feedback de toque */
+.btn:active{transform:scale(.97)}
+.chapter:active{transform:scale(.995)}
+/* paridade de teclado para estados de hover */
+.chapter:focus-visible{background:var(--papel-2)}
+.chapter:focus-visible .roman{color:var(--argila)}
+.chapter:focus-visible .chapter-arrow{transform:translateX(8px);color:var(--argila)}
+.chapter--doce-escuta:focus-visible{background:#F0EBDA}
+.chapter--doce-escuta:focus-visible .roman,.chapter--doce-escuta:focus-visible .chapter-arrow{color:#1F3328}
+@media(prefers-reduced-motion:reduce){.reveal{transition:none!important}.chapters-grid .reveal{transition-delay:0s!important}}
 </style>
 </head>
 
