@@ -257,7 +257,7 @@ p{font-size:clamp(1rem,1.15vw,1.08rem)}
 .float-wa:hover{transform:scale(1.08)}
 .float-wa svg{width:30px;height:30px;fill:#fff}
 
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 
@@ -278,7 +278,7 @@ h1,h2,h3{text-wrap:balance}
 p,.lead{text-wrap:pretty}
 .chip,.badge,.step::before,.creds{font-variant-numeric:tabular-nums}
 /* motion: ease-out expo + stagger em cascata */
-.reveal{transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)}
+.reveal{transition:opacity .5s cubic-bezier(.16,1,.3,1),transform .5s cubic-bezier(.16,1,.3,1)}
 .areas .reveal:nth-child(2){transition-delay:.06s}
 .areas .reveal:nth-child(3){transition-delay:.12s}
 .areas .reveal:nth-child(4){transition-delay:.18s}
@@ -286,6 +286,8 @@ p,.lead{text-wrap:pretty}
 /* feedback de toque */
 .btn:active{transform:scale(.97)}
 .area:active{transform:translateY(-5px) scale(.99)}
+.btn:active,.area:active{transition:transform .14s cubic-bezier(.23,1,.32,1)}
+@media(hover:none){.area:hover{transform:none;box-shadow:none;background:var(--papel-2)}}
 @media(prefers-reduced-motion:reduce){.reveal{transition:none!important}.areas .reveal,.quotes .reveal{transition-delay:0s!important}}
 </style>
 </head>
